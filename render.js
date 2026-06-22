@@ -184,6 +184,21 @@ const FILT = ['f-adv','f-type','f-ctry','f-kb','f-fmt','f-hook','f-appeal','f-to
 let src = '', view = [], cur = -1, activeCard = null;
 const esc = s => (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const SRCLBL = {meta:'Meta', tiktok:'TikTok'};
+const uniq = arr => [...new Set(arr)];
+const advsFor = s => uniq(ADS.filter(a=>!s||a.src===s).map(a=>a.adv)).sort((x,y)=>x.localeCompare(y,'ko'));
+const ctriesFor = s => uniq(ADS.filter(a=>!s||a.src===s).flatMap(a=>a.ctries)).sort();
+function rebuildAdv(){
+  const sel=$('#f-adv'), cur=sel.value; let html='<option value="">광고주 전체</option>';
+  if(src===''){ [['meta','Meta'],['tiktok','TikTok']].forEach(([s,lbl])=>{const list=advsFor(s);if(!list.length)return;html+='<optgroup label="'+lbl+'">'+list.map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join('')+'</optgroup>';}); }
+  else { html+=advsFor(src).map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join(''); }
+  sel.innerHTML=html; sel.value=[...sel.options].some(o=>o.value===cur)?cur:'';
+}
+function rebuildCtry(){
+  const sel=$('#f-ctry'), cur=sel.value, list=ctriesFor(src);
+  if(src==='meta'||!list.length){ sel.innerHTML='<option value="">국가 (Meta 미제공)</option>'; sel.value=''; sel.disabled=true; return; }
+  sel.disabled=false; sel.innerHTML='<option value="">국가 전체</option>'+list.map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join('');
+  sel.value=[...sel.options].some(o=>o.value===cur)?cur:'';
+}
 function pills(a){let o='';if(a.fmt)o+='<span class="pill fmt">'+esc(a.fmt)+'</span>';if(a.hook)o+='<span class="pill"><span class="d h"></span>'+esc(a.hook)+'</span>';if(a.appeal)o+='<span class="pill"><span class="d a"></span>'+esc(a.appeal)+'</span>';if(a.tone)o+='<span class="pill"><span class="d t"></span>'+esc(a.tone)+'</span>';return o}
 function card(a,i){
   const cover = a.media ? '<img loading="lazy" decoding="async" src="'+a.media+'" alt="">' : '<div class="ph">미리보기 없음</div>';
@@ -247,10 +262,10 @@ $('#grid').addEventListener('click',e=>{const c=e.target.closest('.card');if(!c)
 $('#grid').addEventListener('keydown',e=>{if(e.key!=='Enter')return;const c=e.target.closest('.card');if(!c)return;const p=view.indexOf(+c.dataset.i);if(p>=0)openPeek(p)});
 $('#scrim').addEventListener('click',closePeek);$('#p-close').addEventListener('click',closePeek);$('#p-prev').addEventListener('click',()=>step(-1));$('#p-next').addEventListener('click',()=>step(1));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closePeek();else if(cur>=0&&e.key==='ArrowRight')step(1);else if(cur>=0&&e.key==='ArrowLeft')step(-1)});
-$('#seg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;src=b.dataset.src;[...$('#seg').children].forEach(x=>x.classList.toggle('on',x===b));apply()});
+$('#seg').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;src=b.dataset.src;[...$('#seg').children].forEach(x=>x.classList.toggle('on',x===b));rebuildAdv();rebuildCtry();apply()});
 FILT.forEach(id=>$('#'+id).addEventListener('input',apply));
 $('#theme').addEventListener('click',()=>{const r=document.documentElement;const n=r.getAttribute('data-theme')==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('bag-theme',n)}catch(e){}});
-apply();
+rebuildAdv();rebuildCtry();apply();
 </script>
 </body></html>`;
 fs.mkdirSync(OUT_DIR, { recursive: true });
