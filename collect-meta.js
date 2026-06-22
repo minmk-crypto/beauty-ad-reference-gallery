@@ -53,6 +53,10 @@ function PAGE_EXTRACT() {
     let started = null;
     const dm = fullText.match(/(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\./);
     if (dm) started = `${dm[1]}-${String(dm[2]).padStart(2,'0')}-${String(dm[3]).padStart(2,'0')}`;
+    else {
+      const em = fullText.match(/Started running on\s+([A-Z][a-z]{2})[a-z]*\s+(\d{1,2}),?\s*(\d{4})/);
+      if (em) { const MO = { Jan:'01',Feb:'02',Mar:'03',Apr:'04',May:'05',Jun:'06',Jul:'07',Aug:'08',Sep:'09',Oct:'10',Nov:'11',Dec:'12' }[em[1]]; if (MO) started = `${em[3]}-${MO}-${String(em[2]).padStart(2,'0')}`; }
+    }
     const active = /활성|게재 중|Active/.test(fullText) && !/비활성|게재 중단|Inactive/.test(fullText);
     let collation = 0;
     const cm = fullText.match(/광고\s*(\d+)개에서 이 크리에이티브|(\d+)\s*ads use this creative/);
@@ -110,16 +114,17 @@ async function download(url, dest) {
   if (!advertisers.length) { console.error('config.sources.meta.advertisers 에 유효한 page_id 가 없습니다 (TBD)'); process.exit(1); }
 
   const ctx = await chromium.launchPersistentContext(path.join(DIR, 'data', '.pwprofile'), {
-    headless: CFG.headless !== false, locale: 'fr-FR', timezoneId: 'Europe/Paris',
+    headless: CFG.headless !== false, locale: 'en-US', timezoneId: 'Europe/Paris',
     userAgent: UA, viewport: { width: 1366, height: 1000 }, args: ['--disable-blink-features=AutomationControlled'],
   });
   const page = await ctx.newPage();
   page.setDefaultTimeout(CFG.nav_timeout_ms || 60000);
 
-  const items = {}; // 'meta:'+id -> record (countries union)
+  const items = {}; // 'meta:'+id -> record
+  // 글로벌 광고주 페이지는 country=ALL 로 수집(특정국 필터 시 "Similar regional ads" 디스앰비그로 광고 0).
   for (const adv of advertisers) {
     let advTotal = 0;
-    for (const country of M.countries) {
+    for (const country of ['ALL']) {
       if (advTotal >= (M.max_ads_per_advertiser || 200)) break;
       try { await page.goto(adLibraryUrl(adv.page_id, country), { waitUntil: 'domcontentloaded' }); }
       catch (e) { process.stderr.write(`  nav ${adv.label}/${country} fail: ${e.message}\n`); continue; }
@@ -140,12 +145,12 @@ async function download(url, dest) {
       const ads = await page.evaluate(PAGE_EXTRACT);
       for (const ad of ads) {
         const key = `meta:${ad.library_id}`;
-        if (items[key]) { if (!items[key].countries.includes(country)) items[key].countries.push(country); continue; }
+        if (items[key]) continue;
         const copy = (ad.copy || '').split('\n').filter(l => l.trim() !== adv.label && l.trim() !== '광고' && l.trim() !== 'Sponsored').join('\n').trim();
         items[key] = {
           source: 'meta', ad_id: ad.library_id,
           advertiser: adv.label, advertiser_type: adv.type || 'brand', kbeauty: !!adv.kbeauty,
-          countries: [country], format: ad.format, started: ad.started, is_active: !!ad.active, collation: ad.collation,
+          countries: [], format: ad.format, started: ad.started, is_active: !!ad.active, collation: ad.collation,
           copy, cta: ad.cta, landing_url: ad.landing_url, video_url: ad.video_url,
           detail_url: detailUrl(ad.library_id),
           _thumb: ad.thumb_url, _page_id: adv.page_id, _new: !seen.has(key),

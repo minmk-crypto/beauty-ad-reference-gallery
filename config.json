@@ -11,8 +11,8 @@
       "scroll_idle_rounds": 3,
       "scroll_pause_ms": 1500,
       "advertisers": [
-        { "label": "Sephora", "page_id": "TBD", "type": "retailer", "kbeauty": false },
-        { "label": "Nocibé", "page_id": "TBD", "type": "retailer", "kbeauty": false },
+        { "label": "Sephora", "page_id": "16453004404", "type": "retailer", "kbeauty": false },
+        { "label": "Nocibé", "page_id": "104095453961", "type": "retailer", "kbeauty": false },
         { "label": "YesStyle", "page_id": "TBD", "type": "retailer", "kbeauty": true },
         { "label": "Aroma-Zone", "page_id": "TBD", "type": "retailer", "kbeauty": false }
       ]
