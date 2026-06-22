@@ -122,8 +122,12 @@ let src = '', view = [], cur = -1, activeCard = null;
 const esc = s => (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const SRCLBL = {meta:'Meta', tiktok:'TikTok'};
 const uniq = arr => [...new Set(arr)];
+const COUNTRY = {FR:['🇫🇷','프랑스'],DE:['🇩🇪','독일'],IT:['🇮🇹','이탈리아'],ES:['🇪🇸','스페인'],BE:['🇧🇪','벨기에'],PL:['🇵🇱','폴란드'],SE:['🇸🇪','스웨덴'],AT:['🇦🇹','오스트리아'],IE:['🇮🇪','아일랜드'],PT:['🇵🇹','포르투갈'],FI:['🇫🇮','핀란드'],DK:['🇩🇰','덴마크'],CZ:['🇨🇿','체코'],HU:['🇭🇺','헝가리'],RO:['🇷🇴','루마니아'],BG:['🇧🇬','불가리아'],HR:['🇭🇷','크로아티아'],EE:['🇪🇪','에스토니아'],LV:['🇱🇻','라트비아'],LT:['🇱🇹','리투아니아'],NL:['🇳🇱','네덜란드'],GR:['🇬🇷','그리스'],LU:['🇱🇺','룩셈부르크'],SK:['🇸🇰','슬로바키아'],SI:['🇸🇮','슬로베니아'],GB:['🇬🇧','영국'],US:['🇺🇸','미국']};
+const cflag = c => (COUNTRY[c]||['',''])[0] || c;
+const cname = c => (COUNTRY[c]||['',c])[1] || c;
+const clabel = c => COUNTRY[c] ? COUNTRY[c][0]+' '+COUNTRY[c][1] : c;
 const advsFor = s => uniq(ADS.filter(a=>!s||a.src===s).map(a=>a.adv)).sort((x,y)=>x.localeCompare(y,'ko'));
-const ctriesFor = s => uniq(ADS.filter(a=>!s||a.src===s).flatMap(a=>a.ctries)).sort();
+const ctriesFor = s => uniq(ADS.filter(a=>!s||a.src===s).flatMap(a=>a.ctries)).sort((a,b)=>cname(a).localeCompare(cname(b),'ko'));
 function rebuildAdv(){
   const sel=$('#f-adv'), cur=sel.value; let html='<option value="">광고주 전체</option>';
   if(src===''){ [['meta','Meta'],['tiktok','TikTok']].forEach(([s,lbl])=>{const list=advsFor(s);if(!list.length)return;html+='<optgroup label="'+lbl+'">'+list.map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join('')+'</optgroup>';}); }
@@ -133,7 +137,7 @@ function rebuildAdv(){
 function rebuildCtry(){
   const sel=$('#f-ctry'), cur=sel.value, list=ctriesFor(src);
   if(src==='meta'||!list.length){ sel.innerHTML='<option value="">국가 (Meta 미제공)</option>'; sel.value=''; sel.disabled=true; return; }
-  sel.disabled=false; sel.innerHTML='<option value="">국가 전체</option>'+list.map(v=>'<option value="'+esc(v)+'">'+esc(v)+'</option>').join('');
+  sel.disabled=false; sel.innerHTML='<option value="">국가 전체</option>'+list.map(v=>'<option value="'+esc(v)+'">'+esc(clabel(v))+'</option>').join('');
   sel.value=[...sel.options].some(o=>o.value===cur)?cur:'';
 }
 function pills(a){let o='';if(a.fmt)o+='<span class="pill fmt">'+esc(a.fmt)+'</span>';if(a.hook)o+='<span class="pill"><span class="d h"></span>'+esc(a.hook)+'</span>';if(a.appeal)o+='<span class="pill"><span class="d a"></span>'+esc(a.appeal)+'</span>';if(a.tone)o+='<span class="pill"><span class="d t"></span>'+esc(a.tone)+'</span>';return o}
@@ -149,7 +153,7 @@ function card(a,i){
       (a.summary?'<div class="title">'+esc(a.summary)+'</div>':'')+
       '<div class="excerpt">'+esc(a.copy)+'</div>'+
       '<div class="pills">'+pills(a)+'</div>'+
-      '<div class="cmeta">'+(a.started?'<span>'+esc(a.started)+'</span>':'')+(a.ctries.length?'<span class="sep">·</span><span>'+a.ctries.slice(0,6).join(' ')+(a.ctries.length>6?'+':'')+'</span>':'')+(a.ctr?'<span class="sep">·</span><span>CTR '+a.ctr+'</span>':'')+'</div>'+
+      '<div class="cmeta">'+[a.started?'<span>'+esc(a.started)+'</span>':'',a.ctries.length?'<span title="'+esc(a.ctries.map(cname).join(', '))+'">'+a.ctries.slice(0,8).map(cflag).join('')+(a.ctries.length>8?'…':'')+'</span>':'',a.ctr?'<span>CTR '+a.ctr+'</span>':''].filter(Boolean).join('<span class="sep">·</span>')+'</div>'+
     '</div></article>';
 }
 const fv = () => { const o={}; FILT.forEach(id=>o[id]=$('#'+id).value); return o };
@@ -184,7 +188,7 @@ function openPeek(i){if(i<0||i>=view.length)return;cur=i;const a=ADS[view[i]];
       '<dt>플랫폼</dt><dd>'+SRCLBL[a.src]+(a.kb?' · K뷰티':'')+'</dd>'+
       '<dt>광고주 유형</dt><dd>'+tlbl+'</dd>'+
       (a.started?'<dt>게재 시작</dt><dd class="mono">'+esc(a.started)+(a.active?'':' · 종료')+'</dd>':'')+
-      (a.ctries.length?'<dt>국가</dt><dd class="mono">'+a.ctries.join(' ')+'</dd>':'')+
+      (a.ctries.length?'<dt>국가</dt><dd>'+a.ctries.map(clabel).join(', ')+'</dd>':'')+
       (a.ctr!=null?'<dt>CTR</dt><dd class="mono">'+a.ctr+(a.like?' · ♥ '+a.like:'')+'</dd>':'')+
       (a.cta?'<dt>CTA</dt><dd>'+esc(a.cta)+'</dd>':'')+
       '<dt>ID</dt><dd class="mono">'+esc(a.id)+'</dd>'+
