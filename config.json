@@ -1,0 +1,40 @@
+{
+  "active_only": true,
+  "headless": true,
+  "nav_timeout_ms": 60000,
+  "output_dir": "docs",
+  "sources": {
+    "meta": {
+      "ad_type": "all",
+      "countries": ["FR", "DE", "IT", "ES", "BE", "PL", "SE", "AT", "IE", "PT"],
+      "max_ads_per_advertiser": 200,
+      "scroll_idle_rounds": 3,
+      "scroll_pause_ms": 1500,
+      "advertisers": [
+        { "label": "Sephora", "page_id": "TBD", "type": "retailer", "kbeauty": false },
+        { "label": "Nocibé", "page_id": "TBD", "type": "retailer", "kbeauty": false },
+        { "label": "YesStyle", "page_id": "TBD", "type": "retailer", "kbeauty": true },
+        { "label": "Aroma-Zone", "page_id": "TBD", "type": "retailer", "kbeauty": false }
+      ]
+    },
+    "tiktok": {
+      "industry": "14000000000",
+      "regions": ["FR", "DE", "IT", "ES", "PT", "BE", "AT", "IE", "PL", "SE", "FI", "DK", "CZ", "HU", "RO", "BG", "HR", "EE", "LV", "LT"],
+      "period": 30,
+      "order_by": "for_you",
+      "limit": 20,
+      "max_pages_per_region": 2,
+      "pause_ms": 1200
+    }
+  },
+  "tag_enums": {
+    "hook_type": ["문제제기형", "효능강조형", "후기·증언형", "비교형", "호기심형", "정보제공형"],
+    "appeal": ["효능·기능", "성분", "사용감·텍스처", "결과·비포애프터", "가격·프로모션", "트렌드·바이럴", "브랜드무드", "안전·저자극"],
+    "tone": ["정보형", "감성형", "유머형", "미니멀", "감각·ASMR"]
+  },
+  "_notes": {
+    "tiktok": "Creative Center Top Ads 내부 API /creative_radar_api/v1/top_ads/v2/list (로그인 불필요, 페이지 컨텍스트 쿠키로 호출). materials[]: id, brand_name, ad_title, ctr, like, video_info{cover, video_url.720p}. 2026-06-22 recon 확정.",
+    "meta": "page_id 는 Phase-0에서 수집(현재 TBD). ad_type=all (political_and_issue_ads 아님). countries 는 EU 우선순위 부분집합(FR 우선).",
+    "schema": "gallery.json ads 키 = '<source>:<ad_id>'. countries 는 union."
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+data/.ttprofile/
+data/.pwprofile/
+data/manifest-meta.json
+data/manifest-tiktok.json
+*.log
+.DS_Store
