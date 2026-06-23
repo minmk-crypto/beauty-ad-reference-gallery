@@ -2,8 +2,8 @@ name: 주간 갱신 (수집 → 태깅 → 렌더 → 배포)
 
 on:
   schedule:
-    # 매주 월요일 08:00 KST (= 일요일 23:00 UTC)
-    - cron: '0 23 * * 0'
+    # 매주 월·수·금 03:00 KST (= 일·화·목 18:00 UTC)
+    - cron: '0 18 * * 0,2,4'
   workflow_dispatch:        # 수동 실행(테스트용)
 
 permissions:
