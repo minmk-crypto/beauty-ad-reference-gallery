@@ -26,6 +26,13 @@ const state = readJSON(path.join(D, 'state.json'), { seen: [], last_run: null })
 const seen = new Set(state.seen);
 const ts = new Date().toISOString();
 
+// config 의 page_id → {label, country, type, kbeauty} 매핑(Meta 광고주 정규화용).
+// 지역 페이지를 베이스 브랜드로 묶고 국가를 부여한다. stale manifest 등으로 라벨이 어긋나도 매 commit 시 교정.
+const CFG = readJSON(path.join(DIR, 'config.json'), { sources: { meta: { advertisers: [] } } });
+const PMAP = {};
+for (const a of (CFG.sources.meta.advertisers || [])) PMAP[a.page_id] = { label: a.label, country: a.country || '', type: a.type || 'brand', kbeauty: !!a.kbeauty };
+const pageIdOf = (a) => { const m = /assets\/meta\/(\d+)\//.exec(a.media_rel || a.video_rel || ''); return m ? m[1] : null; };
+
 let added = 0;
 for (const man of manifests) {
   const src = man.source;
@@ -51,6 +58,18 @@ for (const man of manifests) {
     added++;
   }
 }
+// Meta 광고주 정규화: page_id 로 config 의 베이스 라벨·국가·유형을 다시 입혀 라벨 drift 차단
+let normalized = 0;
+for (const a of Object.values(gallery.ads)) {
+  if (a.source !== 'meta') continue;
+  const pid = pageIdOf(a); const c = pid && PMAP[pid];
+  if (!c) continue;
+  const ctries = c.country ? [c.country] : (a.countries || []);
+  if (a.advertiser !== c.label || a.advertiser_type !== c.type || a.kbeauty !== c.kbeauty || JSON.stringify(a.countries || []) !== JSON.stringify(ctries)) {
+    a.advertiser = c.label; a.advertiser_type = c.type; a.kbeauty = c.kbeauty; a.countries = ctries; normalized++;
+  }
+}
+
 // tags.json → gallery 동기화: 무태그 광고에 태그가 생겼으면 반영(자가 치유)
 let synced = 0;
 for (const [key, a] of Object.entries(gallery.ads)) {
@@ -63,4 +82,4 @@ gallery.updated_at = ts;
 writeJSON(path.join(D, 'gallery.json'), gallery);
 state.seen = [...seen]; state.last_run = ts;
 writeJSON(path.join(D, 'state.json'), state);
-console.log(JSON.stringify({ committed: added, tags_synced: synced, total_in_gallery: Object.keys(gallery.ads).length }, null, 2));
+console.log(JSON.stringify({ committed: added, normalized, tags_synced: synced, total_in_gallery: Object.keys(gallery.ads).length }, null, 2));
