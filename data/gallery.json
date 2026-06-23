@@ -5752,7 +5752,7 @@
       "advertiser_type": "retailer",
       "kbeauty": true,
       "countries": [],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-04-30",
       "is_active": true,
       "collation": 0,
@@ -5804,7 +5804,7 @@
       "advertiser_type": "retailer",
       "kbeauty": true,
       "countries": [],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-05-04",
       "is_active": true,
       "collation": 0,
@@ -5830,7 +5830,7 @@
       "advertiser_type": "retailer",
       "kbeauty": true,
       "countries": [],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-05-04",
       "is_active": true,
       "collation": 2,
@@ -5937,7 +5937,7 @@
       "advertiser_type": "retailer",
       "kbeauty": true,
       "countries": [],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-04-14",
       "is_active": true,
       "collation": 0,
@@ -5990,7 +5990,7 @@
       "advertiser_type": "retailer",
       "kbeauty": true,
       "countries": [],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-05-01",
       "is_active": true,
       "collation": 0,
@@ -6204,7 +6204,7 @@
       "advertiser_type": "retailer",
       "kbeauty": true,
       "countries": [],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-04-19",
       "is_active": true,
       "collation": 0,
@@ -6314,7 +6314,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-05-04",
       "is_active": true,
       "collation": 3,
@@ -6342,7 +6342,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-05-04",
       "is_active": true,
       "collation": 3,
@@ -6427,7 +6427,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-05-04",
       "is_active": true,
       "collation": 0,
@@ -6684,7 +6684,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-05-04",
       "is_active": true,
       "collation": 0,
@@ -6913,7 +6913,7 @@
       "countries": [
         "FR"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-06-15",
       "is_active": true,
       "collation": 0,
@@ -19326,7 +19326,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-06-10",
       "is_active": true,
       "collation": 0,
@@ -19439,7 +19439,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-06-12",
       "is_active": true,
       "collation": 0,
@@ -19525,7 +19525,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-06-04",
       "is_active": true,
       "collation": 0,
@@ -19610,7 +19610,7 @@
       "countries": [
         "ES"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-06-16",
       "is_active": true,
       "collation": 0,
@@ -26197,7 +26197,7 @@
       "countries": [
         "GB"
       ],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-06-19",
       "is_active": true,
       "collation": 2,
@@ -26701,7 +26701,7 @@
       "advertiser_type": "brand",
       "kbeauty": true,
       "countries": [],
-      "format": "카루셀",
+      "format": "캐러셀",
       "started": "2026-06-08",
       "is_active": true,
       "collation": 0,

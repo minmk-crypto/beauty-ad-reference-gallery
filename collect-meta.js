@@ -65,7 +65,7 @@ function PAGE_EXTRACT() {
     const creativeImgs = [...card.querySelectorAll('img')].filter(im => (im.naturalWidth || 0) > 200).map(im => im.src).filter(s => s && !s.startsWith('data:'));
     let format, videoUrl = null, posterUrl = null, imageUrls = [];
     if (video) { format = '영상'; videoUrl = video.src || video.currentSrc || null; posterUrl = video.poster || creativeImgs[0] || null; }
-    else if (creativeImgs.length > 1) { format = '카루셀'; imageUrls = creativeImgs; }
+    else if (creativeImgs.length > 1) { format = '캐러셀'; imageUrls = creativeImgs; }
     else { format = '단일이미지'; imageUrls = creativeImgs; }
     const thumbUrl = posterUrl || imageUrls[0] || null;
     let landing = null;

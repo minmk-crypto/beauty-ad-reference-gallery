@@ -151,7 +151,7 @@ main{padding:20px 26px 90px}
   <span class="sel"><select id="f-type"><option value="">유형 전체</option><option value="retailer">리테일러·플랫폼</option><option value="brand">브랜드</option><option value="unknown">미상</option></select></span>
   <span class="sel"><select id="f-ctry"><option value="">국가 전체</option>${ctryOptions}</select></span>
   <span class="sel"><select id="f-kb"><option value="">K뷰티 전체</option><option value="1">K뷰티만</option></select></span>
-  <span class="sel"><select id="f-fmt"><option value="">포맷</option>${opt(['단일이미지', '카루셀', '영상'])}</select></span>
+  <span class="sel"><select id="f-fmt"><option value="">포맷</option>${opt(['단일이미지', '캐러셀', '영상'])}</select></span>
   <span class="sel"><select id="f-hook"><option value="">후킹</option>${opt(enums.hook_type)}</select></span>
   <span class="sel"><select id="f-appeal"><option value="">소구</option>${opt(enums.appeal)}</select></span>
   <span class="sel"><select id="f-tone"><option value="">톤</option>${opt(enums.tone)}</select></span>
