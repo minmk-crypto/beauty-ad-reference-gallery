@@ -44,9 +44,10 @@ jobs:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: node tag-ci.js
 
-      - name: 머지 + 렌더
+      - name: 머지 + 정리 + 렌더
         run: |
           node commit.js
+          node prune.js
           node render.js
 
       - name: 커밋 & 푸시

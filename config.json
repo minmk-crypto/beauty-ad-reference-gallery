@@ -3,6 +3,10 @@
   "headless": true,
   "nav_timeout_ms": 60000,
   "output_dir": "docs",
+  "prune": {
+    "cap_mb": 800,
+    "target_mb": 720
+  },
   "sources": {
     "meta": {
       "ad_type": "all",
