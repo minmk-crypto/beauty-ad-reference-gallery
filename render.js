@@ -197,7 +197,9 @@ function rebuildCtry(){
 function pills(a){let o='';if(a.fmt)o+='<span class="pill fmt">'+esc(a.fmt)+'</span>';if(a.hook)o+='<span class="pill"><span class="d h"></span>'+esc(a.hook)+'</span>';if(a.appeal)o+='<span class="pill"><span class="d a"></span>'+esc(a.appeal)+'</span>';if(a.tone)o+='<span class="pill"><span class="d t"></span>'+esc(a.tone)+'</span>';return o}
 function card(a,i){
   const cover = a.media ? '<img loading="lazy" decoding="async" src="'+a.media+'" alt="">' : '<div class="ph">미리보기 없음</div>';
-  const play = a.fmt==='영상' ? '<div class="play"><button class="pbtn" aria-label="재생"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 6l9 6-9 6z"/></svg></button></div>' : '';
+  // 인라인 재생 가능(로컬 영상 또는 Meta 원격)할 때만 재생 버튼 노출. 만료된 TikTok(로컬 없음)은 버튼 숨김 → 오해 방지.
+  const canPlay = a.fmt==='영상' && a.video && (a.vlocal || a.src!=='tiktok');
+  const play = canPlay ? '<div class="play"><button class="pbtn" aria-label="재생"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 6l9 6-9 6z"/></svg></button></div>' : '';
   const cs = a.ar ? ' style="aspect-ratio:'+a.ar+'"' : '';
   const ver = a.collation>1 ? '<div class="ver">v'+a.collation+'</div>' : '';
   return '<article class="card'+(a.active?'':' off')+'" data-i="'+i+'" tabindex="0">'+
