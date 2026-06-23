@@ -51,8 +51,16 @@ for (const man of manifests) {
     added++;
   }
 }
+// tags.json → gallery 동기화: 무태그 광고에 태그가 생겼으면 반영(자가 치유)
+let synced = 0;
+for (const [key, a] of Object.entries(gallery.ads)) {
+  if ((a.tags && a.tags.summary) || !tags[key] || !tags[key].summary) continue;
+  const t = tags[key];
+  a.tags = { hook_type: t.hook_type || null, appeal: t.appeal || null, tone: t.tone || null, summary: t.summary };
+  synced++;
+}
 gallery.updated_at = ts;
 writeJSON(path.join(D, 'gallery.json'), gallery);
 state.seen = [...seen]; state.last_run = ts;
 writeJSON(path.join(D, 'state.json'), state);
-console.log(JSON.stringify({ committed: added, total_in_gallery: Object.keys(gallery.ads).length }, null, 2));
+console.log(JSON.stringify({ committed: added, tags_synced: synced, total_in_gallery: Object.keys(gallery.ads).length }, null, 2));
