@@ -48,7 +48,7 @@ const DATA = JSON.stringify(ads.map(a => {
   return {
     id: `${a.source}:${a.ad_id}`, src: a.source, adv: a.advertiser, type: a.advertiser_type || 'brand', kb: !!a.kbeauty,
     ctries: a.countries || [], fmt: a.format || '', started: a.started || '', active: !!a.is_active, collation: a.collation || 0,
-    copy: a.copy || '', cta: a.cta || '', landing: a.landing_url || '', detail: a.detail_url || '', video: a.video_url || '', media: a.media_rel || '',
+    copy: a.copy || '', cta: a.cta || '', landing: a.landing_url || '', detail: a.detail_url || '', video: a.video_rel || a.video_url || '', vlocal: !!a.video_rel, media: a.media_rel || '',
     ar: s ? `${s.w} / ${s.h}` : '',
     ctr: a.metrics ? a.metrics.ctr : null, like: a.metrics ? a.metrics.like : null,
     hook: (a.tags && a.tags.hook_type) || '', appeal: (a.tags && a.tags.appeal) || '', tone: (a.tags && a.tags.tone) || '', summary: (a.tags && a.tags.summary) || '',
@@ -242,8 +242,8 @@ function failInline(c,a){stopInline(c);const cv=c.querySelector('.cover');if(!cv
 function playInline(c,a){if(activeCard&&activeCard!==c)stopInline(activeCard);const cv=c.querySelector('.cover');if(!cv||cv.querySelector('video.cvideo'))return;if(!a.video){failInline(c,a);return;}const v=document.createElement('video');v.className='cvideo';v.src=a.video;v.muted=true;v.controls=true;v.autoplay=true;v.loop=true;v.playsInline=true;v.preload='metadata';v.addEventListener('error',()=>failInline(c,a));v.addEventListener('click',e=>e.stopPropagation());const p=c.querySelector('.play');if(p)p.style.display='none';const x=document.createElement('button');x.className='vclose';x.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>';cv.appendChild(v);cv.appendChild(x);v.play().catch(()=>{});activeCard=c;}
 function openPeek(i){if(i<0||i>=view.length)return;cur=i;const a=ADS[view[i]];
   $('#p-adv').textContent=a.adv;$('#p-fmt').textContent=a.fmt;$('#p-dot').style.background=a.bc;
-  // TikTok CDN URL 은 수시간 내 만료 → 인라인 재생 불가, 커버+Creative Center 링크로. Meta 만 인라인 시도(만료 시 onerror 폴백).
-  const playable=a.video&&a.src!=='tiktok';
+  // 로컬 저장 영상(vlocal)은 만료 없음 → 항상 인라인. 원격 URL 은 TikTok 제외(수시간 만료), Meta 만 인라인+onerror 폴백.
+  const playable=a.video&&(a.vlocal||a.src!=='tiktok');
   const media=playable?'<video src="'+esc(a.video)+'"'+(a.media?' poster="'+a.media+'"':'')+' controls autoplay muted loop playsinline></video>':(a.media?'<img src="'+a.media+'" alt="">':'<div style="min-height:280px;display:flex;align-items:center;justify-content:center;color:#888">미리보기 없음</div>');
   const tlbl={retailer:'리테일러·플랫폼',brand:'브랜드',unknown:'미상'}[a.type]||a.type;
   $('#pbody').innerHTML='<div class="pmedia">'+media+'</div>'+
@@ -259,14 +259,14 @@ function openPeek(i){if(i<0||i>=view.length)return;cur=i;const a=ADS[view[i]];
       '<dt>ID</dt><dd class="mono">'+esc(a.id)+'</dd>'+
     '</dl>'+
     '<div class="pcopy">'+esc(a.copy||'(카피 없음)')+'</div>'+
-    '<div class="plinks">'+(a.src!=='tiktok'&&a.video?'<a class="primary" href="'+esc(a.video)+'" target="_blank" rel="noopener">영상 원본</a>':'')+(a.detail?'<a class="'+(a.src==='tiktok'?'primary':'')+'" href="'+esc(a.detail)+'" target="_blank" rel="noopener">'+(a.src==='meta'?'Ad Library':'Creative Center에서 재생')+'</a>':'')+(a.landing?'<a href="'+esc(a.landing)+'" target="_blank" rel="noopener">랜딩</a>':'')+'</div>';
+    '<div class="plinks">'+(!a.vlocal&&a.src!=='tiktok'&&a.video?'<a class="primary" href="'+esc(a.video)+'" target="_blank" rel="noopener">영상 원본</a>':'')+(a.detail?'<a class="'+(!playable?'primary':'')+'" href="'+esc(a.detail)+'" target="_blank" rel="noopener">'+(a.src==='meta'?'Ad Library':'Creative Center'+(playable?'':'에서 재생'))+'</a>':'')+(a.landing?'<a href="'+esc(a.landing)+'" target="_blank" rel="noopener">랜딩</a>':'')+'</div>';
   const pv0=$('#pbody').querySelector('.pmedia video');
   if(pv0)pv0.addEventListener('error',()=>{const pm=$('#pbody').querySelector('.pmedia');if(pm)pm.innerHTML=(a.media?'<img src="'+a.media+'" alt="">':'')+'<a class="vfallback" href="'+esc(a.detail||a.video||'#')+'" target="_blank" rel="noopener">영상 만료 — 원본에서 재생</a>';});
   $('#pbody').scrollTop=0;$('#peek').classList.add('on');$('#scrim').classList.add('on');$('#peek').setAttribute('aria-hidden','false');
 }
 function closePeek(){$('#peek').classList.remove('on');$('#scrim').classList.remove('on');$('#peek').setAttribute('aria-hidden','true');const pv=$('#pbody').querySelector('video');if(pv)pv.pause();cur=-1}
 const step=d=>{if(cur>=0)openPeek(cur+d)};
-$('#grid').addEventListener('click',e=>{const c=e.target.closest('.card');if(!c)return;const a=ADS[+c.dataset.i];if(e.target.closest('.vclose')){e.stopPropagation();stopInline(c);return;}if(e.target.closest('.pbtn')){e.stopPropagation();if(a.src==='tiktok'){window.open(a.detail||a.video||'#','_blank','noopener');}else{playInline(c,a);}return;}const p=view.indexOf(+c.dataset.i);if(p>=0)openPeek(p);});
+$('#grid').addEventListener('click',e=>{const c=e.target.closest('.card');if(!c)return;const a=ADS[+c.dataset.i];if(e.target.closest('.vclose')){e.stopPropagation();stopInline(c);return;}if(e.target.closest('.pbtn')){e.stopPropagation();if(a.vlocal||a.src!=='tiktok'){playInline(c,a);}else{window.open(a.detail||'#','_blank','noopener');}return;}const p=view.indexOf(+c.dataset.i);if(p>=0)openPeek(p);});
 $('#grid').addEventListener('keydown',e=>{if(e.key!=='Enter')return;const c=e.target.closest('.card');if(!c)return;const p=view.indexOf(+c.dataset.i);if(p>=0)openPeek(p)});
 $('#scrim').addEventListener('click',closePeek);$('#p-close').addEventListener('click',closePeek);$('#p-prev').addEventListener('click',()=>step(-1));$('#p-next').addEventListener('click',()=>step(1));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closePeek();else if(cur>=0&&e.key==='ArrowRight')step(1);else if(cur>=0&&e.key==='ArrowLeft')step(-1)});

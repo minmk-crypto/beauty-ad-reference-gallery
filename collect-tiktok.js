@@ -92,13 +92,29 @@ async function download(url, dest) {
     process.stderr.write(`  ${region} → +${Object.keys(items).length - before} (cumulative ${Object.keys(items).length})\n`);
   }
 
-  const newItems = Object.values(items).filter(x => x._new);
-  let dl = 0;
-  for (const it of newItems) {
-    const rel = path.join('assets', 'tiktok', `${it.ad_id}.jpg`);
-    const ok = await download(it._cover, path.join(OUT_DIR, rel));
-    it.media_rel = ok ? rel.split(path.sep).join('/') : null;
-    if (ok) dl++;
+  const { saveVideo } = require('./lib-media');
+  const gallery = readJSON(path.join(DIR, 'data', 'gallery.json'), { ads: {} });
+  const allItems = Object.values(items);
+  const newItems = allItems.filter(x => x._new);
+  let dl = 0, vdl = 0;
+  const videoRels = {}; // 'tiktok:id' -> rel  (기존 광고 video_rel 패치용)
+  for (const it of allItems) {
+    const key = `tiktok:${it.ad_id}`;
+    const existing = gallery.ads[key];
+    // 커버: 신규만 다운로드
+    if (it._new) {
+      const rel = path.join('assets', 'tiktok', `${it.ad_id}.jpg`);
+      const ok = await download(it._cover, path.join(OUT_DIR, rel));
+      it.media_rel = ok ? rel.split(path.sep).join('/') : null;
+      if (ok) dl++;
+    }
+    // 영상: TikTok URL 수시간 만료 → fresh 일 때 즉시 강압축 저장. 신규 또는 기존인데 로컬 영상 없으면 채움.
+    const needVideo = it.video_url && (it._new || (existing && !existing.video_rel));
+    if (needVideo) {
+      const vrel = path.join('assets', 'tiktok', `${it.ad_id}.mp4`);
+      const vok = await saveVideo(it.video_url, path.join(OUT_DIR, vrel), { referer: 'https://ads.tiktok.com/', level: 'heavy' });
+      if (vok) { const rl = vrel.split(path.sep).join('/'); it.video_rel = rl; videoRels[key] = rl; vdl++; }
+    }
   }
   await ctx.close();
 
@@ -106,7 +122,8 @@ async function download(url, dest) {
   writeJSON(MANIFEST, {
     generated_at: new Date().toISOString(), source: 'tiktok',
     new: manifestNew,
+    video_rels: videoRels,
     live_ids: Object.keys(items).map(id => `tiktok:${id}`),
   });
-  process.stdout.write(JSON.stringify({ unique: Object.keys(items).length, new: newItems.length, downloaded: dl }, null, 2) + '\n');
+  process.stdout.write(JSON.stringify({ unique: Object.keys(items).length, new: newItems.length, downloaded: dl, videos: vdl }, null, 2) + '\n');
 })().catch(e => { console.error(e); process.exit(1); });

@@ -161,13 +161,21 @@ async function download(url, dest) {
     }
   }
 
+  const { saveVideo } = require('./lib-media');
   const newItems = Object.values(items).filter(x => x._new);
-  let dl = 0;
+  let dl = 0, vdl = 0;
   for (const it of newItems) {
     const rel = path.join('assets', 'meta', String(it._page_id), `${it.ad_id}.jpg`);
     const ok = await download(it._thumb, path.join(OUT_DIR, rel));
     it.media_rel = ok ? rel.split(path.sep).join('/') : null;
     if (ok) dl++;
+    // 영상=만료 방지 위해 파일 저장(Meta 는 작아서 raw). video_rel 우선, 실패 시 원격 video_url 폴백.
+    if (it.video_url) {
+      const vrel = path.join('assets', 'meta', String(it._page_id), `${it.ad_id}.mp4`);
+      const vok = await saveVideo(it.video_url, path.join(OUT_DIR, vrel), { referer: 'https://www.facebook.com/', level: 'raw' });
+      it.video_rel = vok ? vrel.split(path.sep).join('/') : null;
+      if (vok) vdl++;
+    }
   }
   await ctx.close();
 
@@ -176,5 +184,5 @@ async function download(url, dest) {
     new: newItems.map(({ _thumb, _page_id, _new, ...r }) => r),
     live_ids: Object.keys(items),
   });
-  process.stdout.write(JSON.stringify({ advertisers: advertisers.length, countries: M.countries.length, unique: Object.keys(items).length, new: newItems.length, downloaded: dl }, null, 2) + '\n');
+  process.stdout.write(JSON.stringify({ advertisers: advertisers.length, countries: M.countries.length, unique: Object.keys(items).length, new: newItems.length, downloaded: dl, videos: vdl }, null, 2) + '\n');
 })().catch(e => { console.error(e); process.exit(1); });

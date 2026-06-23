@@ -36,6 +36,8 @@ for (const man of manifests) {
     if (live.has(key)) { ad.is_active = true; ad.last_seen = ts; }
     else if (ad.is_active) ad.is_active = false;
   }
+  // 기존 광고 video_rel 패치(fresh URL 로 만료 영상 채움)
+  if (man.video_rels) for (const [key, rel] of Object.entries(man.video_rels)) { if (gallery.ads[key] && !gallery.ads[key].video_rel) gallery.ads[key].video_rel = rel; }
   // 신규 추가
   for (const rec of (man.new || [])) {
     const key = `${rec.source}:${rec.ad_id}`;
