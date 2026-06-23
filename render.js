@@ -75,7 +75,8 @@ body{margin:0;background:var(--ground);color:var(--text);font-family:-apple-syst
 .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
 a{color:inherit;text-decoration:none}button{font-family:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
-header{padding:30px 26px 18px;background:linear-gradient(180deg,#fff,#fbfbfc);border-bottom:1px solid var(--line)}
+header{position:relative;padding:30px 26px 18px;background:linear-gradient(180deg,#fff,#fbfbfc);border-bottom:1px solid var(--line)}
+#theme{position:absolute;top:20px;right:26px}
 :root[data-theme="dark"] header{background:linear-gradient(180deg,#161719,#0d0e11)}
 .eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 h1{margin:6px 0 4px;font-size:23px;letter-spacing:-.02em;font-weight:700}
@@ -136,10 +137,11 @@ main{padding:20px 26px 90px}
 .pcopy{font-size:13px;line-height:1.7;white-space:pre-line;color:var(--text);background:var(--panel-2);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
 .plinks{display:flex;gap:8px;flex-wrap:wrap}.plinks a{font-size:12.5px;font-weight:500;padding:8px 14px;border-radius:8px;border:1px solid var(--line-2);color:var(--text);background:var(--panel)}.plinks a.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.plinks a:hover{border-color:var(--line-strong)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
-@media(max-width:560px){main{padding:16px 14px 80px}header,.bar{padding-left:14px;padding-right:14px}}
+@media(max-width:560px){main{padding:16px 14px 80px}header,.bar{padding-left:14px;padding-right:14px}#theme{right:14px;top:14px}}
 </style></head>
 <body>
 <header>
+  <button class="iconbtn" id="theme" title="라이트/다크 전환" aria-label="테마 전환"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg></button>
   <div class="eyebrow">Beauty Ad Reference · EU</div>
   <h1>뷰티 광고 레퍼런스 갤러리</h1>
   <div class="sub">Meta 광고 라이브러리(브랜드별·EU 다국가) + TikTok Creative Center(상위 광고). 노출·지출은 미제공이라 크리에이티브·카피·태그 중심.</div>
@@ -167,7 +169,6 @@ main{padding:20px 26px 90px}
   <span class="sel"><select id="f-sort"><option value="new">최신순</option><option value="old">오래된순</option></select></span>
   <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="f-q" type="search" placeholder="카피·요약 검색"></label>
   <span class="cmd-count" id="count"></span>
-  <button class="iconbtn" id="theme" title="테마"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg></button>
 </div>
 <main><div class="grid" id="grid"></div></main>
 <div class="scrim" id="scrim"></div>
