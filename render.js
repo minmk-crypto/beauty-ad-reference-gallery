@@ -81,10 +81,11 @@ header{position:relative;padding:30px 26px 18px;background:linear-gradient(180de
 .eyebrow{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 h1{margin:6px 0 4px;font-size:23px;letter-spacing:-.02em;font-weight:700}
 .sub{color:var(--muted);font-size:12.5px;max-width:760px}
-.kpis{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
-.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:108px}
-.kpi .n{font-size:21px;font-weight:700;letter-spacing:-.02em}.kpi .n small{font-size:12px;color:var(--faint);font-weight:600}
-.kpi .l{font-size:11px;color:var(--muted);margin-top:2px}.kpi.wide{flex:1;min-width:220px}
+.stats{display:inline-flex;align-items:stretch;flex-wrap:wrap;margin-top:18px;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
+.st{padding:9px 18px;display:flex;flex-direction:column;gap:1px}
+.st+.st{border-left:1px solid var(--line)}
+.st .n{font-size:19px;font-weight:700;letter-spacing:-.02em}.st .n small{font-size:12px;color:var(--faint);font-weight:600}
+.st .l{font-size:10.5px;color:var(--muted);letter-spacing:.02em}
 .mb-row{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);margin-top:5px}.mb-row:first-of-type{margin-top:8px}
 .mb-k{width:82px;flex:none;text-align:right;color:var(--text)}.mb-track{flex:1;height:6px;background:var(--inset);border-radius:99px;overflow:hidden}.mb-fill{display:block;height:100%;background:var(--accent);border-radius:99px}.mb-v{width:26px;flex:none;text-align:right;font-variant-numeric:tabular-nums}
 .bar{position:sticky;top:0;z-index:20;display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:11px 26px;background:color-mix(in srgb,var(--ground) 86%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
@@ -145,12 +146,11 @@ main{padding:20px 26px 90px}
   <div class="eyebrow">Beauty Ad Reference · EU</div>
   <h1>뷰티 광고 레퍼런스 갤러리</h1>
   <div class="sub">Meta 광고 라이브러리(브랜드별·EU 다국가) + TikTok Creative Center(상위 광고). 노출·지출은 미제공이라 크리에이티브·카피·태그 중심.</div>
-  <div class="kpis">
-    <div class="kpi"><div class="n">${ads.length}</div><div class="l">전체 광고</div></div>
-    <div class="kpi"><div class="n">${bySrc.meta} <small>/ ${bySrc.tiktok}</small></div><div class="l">Meta / TikTok</div></div>
-    <div class="kpi"><div class="n">${advNames.length}</div><div class="l">광고주</div></div>
-    <div class="kpi"><div class="n">${countriesAll.length}</div><div class="l">국가</div></div>
-    <div class="kpi wide"><div class="l" style="font-weight:600;color:var(--text)">후킹 유형 분포</div>${miniBar(hookDist, ads.length)}</div>
+  <div class="stats">
+    <div class="st"><span class="n">${ads.length}</span><span class="l">전체 광고</span></div>
+    <div class="st"><span class="n">${bySrc.meta} <small>/ ${bySrc.tiktok}</small></span><span class="l">Meta / TikTok</span></div>
+    <div class="st"><span class="n">${advNames.length}</span><span class="l">광고주</span></div>
+    <div class="st"><span class="n">${countriesAll.length}</span><span class="l">국가</span></div>
   </div>
 </header>
 <div class="bar">
