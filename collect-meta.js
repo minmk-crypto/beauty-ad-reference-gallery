@@ -173,7 +173,7 @@ async function download(url, dest) {
     // 영상=만료 방지 위해 파일 저장(Meta 는 작아서 raw). video_rel 우선, 실패 시 원격 video_url 폴백.
     if (it.video_url) {
       const vrel = path.join('assets', 'meta', String(it._page_id), `${it.ad_id}.mp4`);
-      const vok = await saveVideo(it.video_url, path.join(OUT_DIR, vrel), { referer: 'https://www.facebook.com/', level: 'raw' });
+      const vok = await saveVideo(it.video_url, path.join(OUT_DIR, vrel), { referer: 'https://www.facebook.com/', level: 'heavy' });
       it.video_rel = vok ? vrel.split(path.sep).join('/') : null;
       if (vok) vdl++;
     }
