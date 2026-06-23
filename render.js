@@ -143,7 +143,7 @@ main{padding:20px 26px 90px}
   <button class="iconbtn" id="theme" title="라이트/다크 전환" aria-label="테마 전환"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg></button>
   <div class="eyebrow">Beauty Ad Reference · EU</div>
   <h1>뷰티 광고 레퍼런스 갤러리</h1>
-  <div class="sub">Meta 광고 라이브러리(브랜드별·EU 다국가) + TikTok Creative Center(상위 광고). 노출·지출은 미제공이라 크리에이티브·카피·태그 중심.</div>
+  <div class="sub">유럽에서 집행 중인 뷰티 광고를 한곳에 모았습니다. Meta와 TikTok에서 실제 돌아가는 소재를 후킹·소구·톤으로 분류해, 다음 캠페인 만들 때 바로 찾아볼 수 있게 정리했습니다.</div>
   <div class="stats">
     <span>광고 <b>${ads.length}</b></span><span class="dot">·</span>
     <span>광고주 <b>${advNames.length}</b></span><span class="dot">·</span>
