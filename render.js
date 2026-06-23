@@ -199,7 +199,7 @@ function rebuildAdv(){
 }
 function rebuildCtry(){
   const sel=$('#f-ctry'), cur=sel.value, list=ctriesFor(src);
-  if(src==='meta'||!list.length){ sel.innerHTML='<option value="">국가 (Meta 미제공)</option>'; sel.value=''; sel.disabled=true; return; }
+  if(!list.length){ sel.innerHTML='<option value="">국가 없음</option>'; sel.value=''; sel.disabled=true; return; }
   sel.disabled=false; sel.innerHTML='<option value="">국가 전체</option>'+list.map(v=>'<option value="'+esc(v)+'">'+esc(clabel(v))+'</option>').join('');
   sel.value=[...sel.options].some(o=>o.value===cur)?cur:'';
 }

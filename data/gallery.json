@@ -6279,10 +6279,12 @@
     "meta:898896249266399": {
       "source": "meta",
       "ad_id": "898896249266399",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-01-11",
       "is_active": true,
@@ -6306,10 +6308,12 @@
     "meta:1542555834156555": {
       "source": "meta",
       "ad_id": "1542555834156555",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-05-04",
       "is_active": true,
@@ -6332,10 +6336,12 @@
     "meta:1478457060618042": {
       "source": "meta",
       "ad_id": "1478457060618042",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-05-04",
       "is_active": true,
@@ -6358,10 +6364,12 @@
     "meta:2037180677208924": {
       "source": "meta",
       "ad_id": "2037180677208924",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-05-04",
       "is_active": true,
@@ -6384,10 +6392,12 @@
     "meta:25059739047035695": {
       "source": "meta",
       "ad_id": "25059739047035695",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-09",
       "is_active": true,
@@ -6411,10 +6421,12 @@
     "meta:4437300969839217": {
       "source": "meta",
       "ad_id": "4437300969839217",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-05-04",
       "is_active": true,
@@ -6437,10 +6449,12 @@
     "meta:2269041713503234": {
       "source": "meta",
       "ad_id": "2269041713503234",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-05-09",
       "is_active": true,
@@ -6464,10 +6478,12 @@
     "meta:981477691281670": {
       "source": "meta",
       "ad_id": "981477691281670",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-05-04",
       "is_active": true,
@@ -6490,10 +6506,12 @@
     "meta:3348397365337859": {
       "source": "meta",
       "ad_id": "3348397365337859",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-09",
       "is_active": true,
@@ -6517,10 +6535,12 @@
     "meta:35241501705496110": {
       "source": "meta",
       "ad_id": "35241501705496110",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-05-04",
       "is_active": true,
@@ -6543,10 +6563,12 @@
     "meta:1324768202835094": {
       "source": "meta",
       "ad_id": "1324768202835094",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-05-05",
       "is_active": true,
@@ -6569,10 +6591,12 @@
     "meta:2167328087446981": {
       "source": "meta",
       "ad_id": "2167328087446981",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-05-07",
       "is_active": true,
@@ -6596,10 +6620,12 @@
     "meta:1287412422971693": {
       "source": "meta",
       "ad_id": "1287412422971693",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-05-07",
       "is_active": true,
@@ -6623,10 +6649,12 @@
     "meta:1055478216741977": {
       "source": "meta",
       "ad_id": "1055478216741977",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-01-22",
       "is_active": true,
@@ -6650,10 +6678,12 @@
     "meta:4194979134059252": {
       "source": "meta",
       "ad_id": "4194979134059252",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-05-04",
       "is_active": true,
@@ -6676,10 +6706,12 @@
     "meta:1486785239832635": {
       "source": "meta",
       "ad_id": "1486785239832635",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-04",
       "is_active": true,
@@ -6703,10 +6735,12 @@
     "meta:1292493069401315": {
       "source": "meta",
       "ad_id": "1292493069401315",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-24",
       "is_active": true,
@@ -6730,10 +6764,12 @@
     "meta:26084668044538090": {
       "source": "meta",
       "ad_id": "26084668044538090",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-09",
       "is_active": true,
@@ -6757,10 +6793,12 @@
     "meta:27234807472777846": {
       "source": "meta",
       "ad_id": "27234807472777846",
-      "advertiser": "YesStyle (ES)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-05-04",
       "is_active": true,
@@ -6783,10 +6821,12 @@
     "meta:956801710621027": {
       "source": "meta",
       "ad_id": "956801710621027",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-04-23",
       "is_active": true,
@@ -6810,10 +6850,12 @@
     "meta:1274846097553881": {
       "source": "meta",
       "ad_id": "1274846097553881",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-04-20",
       "is_active": true,
@@ -6837,10 +6879,12 @@
     "meta:2108646503029011": {
       "source": "meta",
       "ad_id": "2108646503029011",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-16",
       "is_active": true,
@@ -6863,10 +6907,12 @@
     "meta:1925335884830063": {
       "source": "meta",
       "ad_id": "1925335884830063",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "카루셀",
       "started": "2026-06-15",
       "is_active": true,
@@ -6889,10 +6935,12 @@
     "meta:1407072444613998": {
       "source": "meta",
       "ad_id": "1407072444613998",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-06-15",
       "is_active": true,
@@ -6916,10 +6964,12 @@
     "meta:983459744683727": {
       "source": "meta",
       "ad_id": "983459744683727",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-06-15",
       "is_active": true,
@@ -6943,10 +6993,12 @@
     "meta:1309427801393418": {
       "source": "meta",
       "ad_id": "1309427801393418",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-06-15",
       "is_active": true,
@@ -6970,10 +7022,12 @@
     "meta:2842786759419882": {
       "source": "meta",
       "ad_id": "2842786759419882",
-      "advertiser": "YesStyle (FR)",
+      "advertiser": "YesStyle",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-06-15",
       "is_active": true,
@@ -7736,7 +7790,7 @@
     "meta:940124798823492": {
       "source": "meta",
       "ad_id": "940124798823492",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7762,7 +7816,7 @@
     "meta:4347279455485090": {
       "source": "meta",
       "ad_id": "4347279455485090",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7788,7 +7842,7 @@
     "meta:4357936207820858": {
       "source": "meta",
       "ad_id": "4357936207820858",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7814,7 +7868,7 @@
     "meta:1695155811593796": {
       "source": "meta",
       "ad_id": "1695155811593796",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7840,7 +7894,7 @@
     "meta:1295387382794050": {
       "source": "meta",
       "ad_id": "1295387382794050",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7866,7 +7920,7 @@
     "meta:1663825418378957": {
       "source": "meta",
       "ad_id": "1663825418378957",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7893,7 +7947,7 @@
     "meta:980317558057308": {
       "source": "meta",
       "ad_id": "980317558057308",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7919,7 +7973,7 @@
     "meta:1585399729308972": {
       "source": "meta",
       "ad_id": "1585399729308972",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7945,7 +7999,7 @@
     "meta:1566846864420465": {
       "source": "meta",
       "ad_id": "1566846864420465",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7971,7 +8025,7 @@
     "meta:969990002217418": {
       "source": "meta",
       "ad_id": "969990002217418",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -7997,7 +8051,7 @@
     "meta:1274193497507094": {
       "source": "meta",
       "ad_id": "1274193497507094",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8023,7 +8077,7 @@
     "meta:1534473441517647": {
       "source": "meta",
       "ad_id": "1534473441517647",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8049,7 +8103,7 @@
     "meta:1447659727107125": {
       "source": "meta",
       "ad_id": "1447659727107125",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8076,7 +8130,7 @@
     "meta:2744628952582044": {
       "source": "meta",
       "ad_id": "2744628952582044",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8103,7 +8157,7 @@
     "meta:981238594368638": {
       "source": "meta",
       "ad_id": "981238594368638",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8130,7 +8184,7 @@
     "meta:1278616284260799": {
       "source": "meta",
       "ad_id": "1278616284260799",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8156,7 +8210,7 @@
     "meta:1443538414124870": {
       "source": "meta",
       "ad_id": "1443538414124870",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8183,7 +8237,7 @@
     "meta:966495869175066": {
       "source": "meta",
       "ad_id": "966495869175066",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8209,7 +8263,7 @@
     "meta:1575681123517928": {
       "source": "meta",
       "ad_id": "1575681123517928",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8235,7 +8289,7 @@
     "meta:3025252387675133": {
       "source": "meta",
       "ad_id": "3025252387675133",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8261,7 +8315,7 @@
     "meta:1648953666373354": {
       "source": "meta",
       "ad_id": "1648953666373354",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8288,7 +8342,7 @@
     "meta:1368346271606508": {
       "source": "meta",
       "ad_id": "1368346271606508",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8315,7 +8369,7 @@
     "meta:26250015058024884": {
       "source": "meta",
       "ad_id": "26250015058024884",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8342,7 +8396,7 @@
     "meta:1557787949096625": {
       "source": "meta",
       "ad_id": "1557787949096625",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8369,7 +8423,7 @@
     "meta:1007371695013100": {
       "source": "meta",
       "ad_id": "1007371695013100",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -8396,7 +8450,7 @@
     "meta:1697811077923143": {
       "source": "meta",
       "ad_id": "1697811077923143",
-      "advertiser": "Aroma-Zone (2)",
+      "advertiser": "Aroma-Zone",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -9835,7 +9889,7 @@
     "meta:1004714618519918": {
       "source": "meta",
       "ad_id": "1004714618519918",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -9861,7 +9915,7 @@
     "meta:2295948834257140": {
       "source": "meta",
       "ad_id": "2295948834257140",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -9887,7 +9941,7 @@
     "meta:1410415190837997": {
       "source": "meta",
       "ad_id": "1410415190837997",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -9913,7 +9967,7 @@
     "meta:940903838532825": {
       "source": "meta",
       "ad_id": "940903838532825",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -9939,7 +9993,7 @@
     "meta:1505555367173314": {
       "source": "meta",
       "ad_id": "1505555367173314",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -9965,7 +10019,7 @@
     "meta:669300462241527": {
       "source": "meta",
       "ad_id": "669300462241527",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -9991,7 +10045,7 @@
     "meta:1133503402054186": {
       "source": "meta",
       "ad_id": "1133503402054186",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10017,7 +10071,7 @@
     "meta:1406752411459875": {
       "source": "meta",
       "ad_id": "1406752411459875",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10043,7 +10097,7 @@
     "meta:1390205715321259": {
       "source": "meta",
       "ad_id": "1390205715321259",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10069,7 +10123,7 @@
     "meta:1970237986888694": {
       "source": "meta",
       "ad_id": "1970237986888694",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10095,7 +10149,7 @@
     "meta:677802434751958": {
       "source": "meta",
       "ad_id": "677802434751958",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10121,7 +10175,7 @@
     "meta:1544642306775859": {
       "source": "meta",
       "ad_id": "1544642306775859",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10147,7 +10201,7 @@
     "meta:753827737011558": {
       "source": "meta",
       "ad_id": "753827737011558",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10173,7 +10227,7 @@
     "meta:1648886222945214": {
       "source": "meta",
       "ad_id": "1648886222945214",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10200,7 +10254,7 @@
     "meta:1125459016389585": {
       "source": "meta",
       "ad_id": "1125459016389585",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10226,7 +10280,7 @@
     "meta:1689926128696871": {
       "source": "meta",
       "ad_id": "1689926128696871",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10253,7 +10307,7 @@
     "meta:1928641711369206": {
       "source": "meta",
       "ad_id": "1928641711369206",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10279,7 +10333,7 @@
     "meta:24610020618625024": {
       "source": "meta",
       "ad_id": "24610020618625024",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10305,7 +10359,7 @@
     "meta:26713971341625623": {
       "source": "meta",
       "ad_id": "26713971341625623",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10331,7 +10385,7 @@
     "meta:1613137069911397": {
       "source": "meta",
       "ad_id": "1613137069911397",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10357,7 +10411,7 @@
     "meta:1117409237273461": {
       "source": "meta",
       "ad_id": "1117409237273461",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10383,7 +10437,7 @@
     "meta:1578898016940040": {
       "source": "meta",
       "ad_id": "1578898016940040",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10409,7 +10463,7 @@
     "meta:1682991642732464": {
       "source": "meta",
       "ad_id": "1682991642732464",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10435,7 +10489,7 @@
     "meta:816969454358531": {
       "source": "meta",
       "ad_id": "816969454358531",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10462,7 +10516,7 @@
     "meta:1414147727154175": {
       "source": "meta",
       "ad_id": "1414147727154175",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10488,7 +10542,7 @@
     "meta:1610823013473670": {
       "source": "meta",
       "ad_id": "1610823013473670",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10514,7 +10568,7 @@
     "meta:1292639998962571": {
       "source": "meta",
       "ad_id": "1292639998962571",
-      "advertiser": "Notino (2)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10540,7 +10594,7 @@
     "meta:1217809793726754": {
       "source": "meta",
       "ad_id": "1217809793726754",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10566,7 +10620,7 @@
     "meta:596770920086868": {
       "source": "meta",
       "ad_id": "596770920086868",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10592,7 +10646,7 @@
     "meta:1125127799256409": {
       "source": "meta",
       "ad_id": "1125127799256409",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10618,7 +10672,7 @@
     "meta:1291172536113445": {
       "source": "meta",
       "ad_id": "1291172536113445",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10644,7 +10698,7 @@
     "meta:1751142585591836": {
       "source": "meta",
       "ad_id": "1751142585591836",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10670,7 +10724,7 @@
     "meta:1127525462873992": {
       "source": "meta",
       "ad_id": "1127525462873992",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10696,7 +10750,7 @@
     "meta:1385185046637174": {
       "source": "meta",
       "ad_id": "1385185046637174",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10722,7 +10776,7 @@
     "meta:574562245748829": {
       "source": "meta",
       "ad_id": "574562245748829",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10748,7 +10802,7 @@
     "meta:1514701987035596": {
       "source": "meta",
       "ad_id": "1514701987035596",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10774,7 +10828,7 @@
     "meta:874488248784226": {
       "source": "meta",
       "ad_id": "874488248784226",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10800,7 +10854,7 @@
     "meta:1226088596244662": {
       "source": "meta",
       "ad_id": "1226088596244662",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10826,7 +10880,7 @@
     "meta:1067576962171665": {
       "source": "meta",
       "ad_id": "1067576962171665",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10852,7 +10906,7 @@
     "meta:1290595866253413": {
       "source": "meta",
       "ad_id": "1290595866253413",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10878,7 +10932,7 @@
     "meta:914227248285989": {
       "source": "meta",
       "ad_id": "914227248285989",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10904,7 +10958,7 @@
     "meta:1559704888437290": {
       "source": "meta",
       "ad_id": "1559704888437290",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10930,7 +10984,7 @@
     "meta:4178212352415322": {
       "source": "meta",
       "ad_id": "4178212352415322",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10956,7 +11010,7 @@
     "meta:1444463869964648": {
       "source": "meta",
       "ad_id": "1444463869964648",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -10982,7 +11036,7 @@
     "meta:1333133558628162": {
       "source": "meta",
       "ad_id": "1333133558628162",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11008,7 +11062,7 @@
     "meta:1777268142981674": {
       "source": "meta",
       "ad_id": "1777268142981674",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11034,7 +11088,7 @@
     "meta:864589262629060": {
       "source": "meta",
       "ad_id": "864589262629060",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11060,7 +11114,7 @@
     "meta:2153249602295240": {
       "source": "meta",
       "ad_id": "2153249602295240",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11086,7 +11140,7 @@
     "meta:974326991949729": {
       "source": "meta",
       "ad_id": "974326991949729",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11112,7 +11166,7 @@
     "meta:764963713043088": {
       "source": "meta",
       "ad_id": "764963713043088",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11138,7 +11192,7 @@
     "meta:1297344832157820": {
       "source": "meta",
       "ad_id": "1297344832157820",
-      "advertiser": "Notino (3)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11164,7 +11218,7 @@
     "meta:667949909020381": {
       "source": "meta",
       "ad_id": "667949909020381",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11190,7 +11244,7 @@
     "meta:2037505983672150": {
       "source": "meta",
       "ad_id": "2037505983672150",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11216,7 +11270,7 @@
     "meta:1502060427969046": {
       "source": "meta",
       "ad_id": "1502060427969046",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11242,7 +11296,7 @@
     "meta:1523012072701547": {
       "source": "meta",
       "ad_id": "1523012072701547",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11268,7 +11322,7 @@
     "meta:1052007727234288": {
       "source": "meta",
       "ad_id": "1052007727234288",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11294,7 +11348,7 @@
     "meta:1540736213607053": {
       "source": "meta",
       "ad_id": "1540736213607053",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11320,7 +11374,7 @@
     "meta:1697057387973895": {
       "source": "meta",
       "ad_id": "1697057387973895",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11346,7 +11400,7 @@
     "meta:1875131523174869": {
       "source": "meta",
       "ad_id": "1875131523174869",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11372,7 +11426,7 @@
     "meta:1255103759741177": {
       "source": "meta",
       "ad_id": "1255103759741177",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11398,7 +11452,7 @@
     "meta:815749941427015": {
       "source": "meta",
       "ad_id": "815749941427015",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11424,7 +11478,7 @@
     "meta:1562456078809938": {
       "source": "meta",
       "ad_id": "1562456078809938",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11450,7 +11504,7 @@
     "meta:1614621219842180": {
       "source": "meta",
       "ad_id": "1614621219842180",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11476,7 +11530,7 @@
     "meta:2462023514318335": {
       "source": "meta",
       "ad_id": "2462023514318335",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11502,7 +11556,7 @@
     "meta:1790850158369172": {
       "source": "meta",
       "ad_id": "1790850158369172",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11528,7 +11582,7 @@
     "meta:2158273638337582": {
       "source": "meta",
       "ad_id": "2158273638337582",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11555,7 +11609,7 @@
     "meta:847592018244748": {
       "source": "meta",
       "ad_id": "847592018244748",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11581,7 +11635,7 @@
     "meta:1564199325056589": {
       "source": "meta",
       "ad_id": "1564199325056589",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11607,7 +11661,7 @@
     "meta:944513598585976": {
       "source": "meta",
       "ad_id": "944513598585976",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11633,7 +11687,7 @@
     "meta:1106531641646481": {
       "source": "meta",
       "ad_id": "1106531641646481",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11659,7 +11713,7 @@
     "meta:2055936338538096": {
       "source": "meta",
       "ad_id": "2055936338538096",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11685,7 +11739,7 @@
     "meta:641748198591817": {
       "source": "meta",
       "ad_id": "641748198591817",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11711,7 +11765,7 @@
     "meta:2955729661284524": {
       "source": "meta",
       "ad_id": "2955729661284524",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11737,7 +11791,7 @@
     "meta:993753176651243": {
       "source": "meta",
       "ad_id": "993753176651243",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11763,7 +11817,7 @@
     "meta:1347901666855339": {
       "source": "meta",
       "ad_id": "1347901666855339",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11789,7 +11843,7 @@
     "meta:963442219386173": {
       "source": "meta",
       "ad_id": "963442219386173",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11815,7 +11869,7 @@
     "meta:1492815469158782": {
       "source": "meta",
       "ad_id": "1492815469158782",
-      "advertiser": "Notino (4)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11841,7 +11895,7 @@
     "meta:2098748490606049": {
       "source": "meta",
       "ad_id": "2098748490606049",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11867,7 +11921,7 @@
     "meta:4263389730640514": {
       "source": "meta",
       "ad_id": "4263389730640514",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11893,7 +11947,7 @@
     "meta:1204059768029384": {
       "source": "meta",
       "ad_id": "1204059768029384",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11919,7 +11973,7 @@
     "meta:1870723553583558": {
       "source": "meta",
       "ad_id": "1870723553583558",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11945,7 +11999,7 @@
     "meta:3516992825118353": {
       "source": "meta",
       "ad_id": "3516992825118353",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11971,7 +12025,7 @@
     "meta:1488353402723405": {
       "source": "meta",
       "ad_id": "1488353402723405",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -11997,7 +12051,7 @@
     "meta:2009979249590742": {
       "source": "meta",
       "ad_id": "2009979249590742",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12023,7 +12077,7 @@
     "meta:937725572191140": {
       "source": "meta",
       "ad_id": "937725572191140",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12049,7 +12103,7 @@
     "meta:982995730875302": {
       "source": "meta",
       "ad_id": "982995730875302",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12075,7 +12129,7 @@
     "meta:1671854480657714": {
       "source": "meta",
       "ad_id": "1671854480657714",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12101,7 +12155,7 @@
     "meta:1636469710921900": {
       "source": "meta",
       "ad_id": "1636469710921900",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12127,7 +12181,7 @@
     "meta:1514685493625435": {
       "source": "meta",
       "ad_id": "1514685493625435",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12153,7 +12207,7 @@
     "meta:1996667950978192": {
       "source": "meta",
       "ad_id": "1996667950978192",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12179,7 +12233,7 @@
     "meta:1270427685015953": {
       "source": "meta",
       "ad_id": "1270427685015953",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12205,7 +12259,7 @@
     "meta:1666924184488018": {
       "source": "meta",
       "ad_id": "1666924184488018",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12231,7 +12285,7 @@
     "meta:962845146115069": {
       "source": "meta",
       "ad_id": "962845146115069",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12257,7 +12311,7 @@
     "meta:1646294193160337": {
       "source": "meta",
       "ad_id": "1646294193160337",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12283,7 +12337,7 @@
     "meta:980239197914813": {
       "source": "meta",
       "ad_id": "980239197914813",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12309,7 +12363,7 @@
     "meta:2207128650037112": {
       "source": "meta",
       "ad_id": "2207128650037112",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12335,7 +12389,7 @@
     "meta:1814888722520732": {
       "source": "meta",
       "ad_id": "1814888722520732",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12361,7 +12415,7 @@
     "meta:1564226638158408": {
       "source": "meta",
       "ad_id": "1564226638158408",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12387,7 +12441,7 @@
     "meta:1033908722437773": {
       "source": "meta",
       "ad_id": "1033908722437773",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12413,7 +12467,7 @@
     "meta:963427016050607": {
       "source": "meta",
       "ad_id": "963427016050607",
-      "advertiser": "Notino (5)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12439,7 +12493,7 @@
     "meta:1246216700296567": {
       "source": "meta",
       "ad_id": "1246216700296567",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12465,7 +12519,7 @@
     "meta:1089752969834028": {
       "source": "meta",
       "ad_id": "1089752969834028",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12491,7 +12545,7 @@
     "meta:922483097387975": {
       "source": "meta",
       "ad_id": "922483097387975",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12517,7 +12571,7 @@
     "meta:23968314686195369": {
       "source": "meta",
       "ad_id": "23968314686195369",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12543,7 +12597,7 @@
     "meta:1305966478207415": {
       "source": "meta",
       "ad_id": "1305966478207415",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12569,7 +12623,7 @@
     "meta:1491978835178957": {
       "source": "meta",
       "ad_id": "1491978835178957",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12595,7 +12649,7 @@
     "meta:987626040610596": {
       "source": "meta",
       "ad_id": "987626040610596",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12621,7 +12675,7 @@
     "meta:811502252018526": {
       "source": "meta",
       "ad_id": "811502252018526",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12647,7 +12701,7 @@
     "meta:2038082199989512": {
       "source": "meta",
       "ad_id": "2038082199989512",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12673,7 +12727,7 @@
     "meta:645673571559138": {
       "source": "meta",
       "ad_id": "645673571559138",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12699,7 +12753,7 @@
     "meta:1640585333654885": {
       "source": "meta",
       "ad_id": "1640585333654885",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12725,7 +12779,7 @@
     "meta:1946806469252311": {
       "source": "meta",
       "ad_id": "1946806469252311",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12751,7 +12805,7 @@
     "meta:843165398798219": {
       "source": "meta",
       "ad_id": "843165398798219",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12777,7 +12831,7 @@
     "meta:1702462111100515": {
       "source": "meta",
       "ad_id": "1702462111100515",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12803,7 +12857,7 @@
     "meta:1503413534758552": {
       "source": "meta",
       "ad_id": "1503413534758552",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12829,7 +12883,7 @@
     "meta:1567362054473374": {
       "source": "meta",
       "ad_id": "1567362054473374",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12855,7 +12909,7 @@
     "meta:1250009273915023": {
       "source": "meta",
       "ad_id": "1250009273915023",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12881,7 +12935,7 @@
     "meta:3847359902240294": {
       "source": "meta",
       "ad_id": "3847359902240294",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12907,7 +12961,7 @@
     "meta:2202862980454720": {
       "source": "meta",
       "ad_id": "2202862980454720",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12933,7 +12987,7 @@
     "meta:1637929334178564": {
       "source": "meta",
       "ad_id": "1637929334178564",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12959,7 +13013,7 @@
     "meta:1552949422947747": {
       "source": "meta",
       "ad_id": "1552949422947747",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -12985,7 +13039,7 @@
     "meta:1272528811014617": {
       "source": "meta",
       "ad_id": "1272528811014617",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13011,7 +13065,7 @@
     "meta:2295234264334521": {
       "source": "meta",
       "ad_id": "2295234264334521",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13037,7 +13091,7 @@
     "meta:4182747785347390": {
       "source": "meta",
       "ad_id": "4182747785347390",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13063,7 +13117,7 @@
     "meta:1823396218540531": {
       "source": "meta",
       "ad_id": "1823396218540531",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13089,7 +13143,7 @@
     "meta:996087412991241": {
       "source": "meta",
       "ad_id": "996087412991241",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13115,7 +13169,7 @@
     "meta:1631229355018956": {
       "source": "meta",
       "ad_id": "1631229355018956",
-      "advertiser": "Notino (6)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13141,7 +13195,7 @@
     "meta:1030054541907225": {
       "source": "meta",
       "ad_id": "1030054541907225",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13167,7 +13221,7 @@
     "meta:9803801966319804": {
       "source": "meta",
       "ad_id": "9803801966319804",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13193,7 +13247,7 @@
     "meta:1434151208115589": {
       "source": "meta",
       "ad_id": "1434151208115589",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13219,7 +13273,7 @@
     "meta:1129998792642068": {
       "source": "meta",
       "ad_id": "1129998792642068",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13245,7 +13299,7 @@
     "meta:931941359076480": {
       "source": "meta",
       "ad_id": "931941359076480",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13271,7 +13325,7 @@
     "meta:2035875273671939": {
       "source": "meta",
       "ad_id": "2035875273671939",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13297,7 +13351,7 @@
     "meta:636645765587250": {
       "source": "meta",
       "ad_id": "636645765587250",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13323,7 +13377,7 @@
     "meta:1893030507951024": {
       "source": "meta",
       "ad_id": "1893030507951024",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13349,7 +13403,7 @@
     "meta:727735833708413": {
       "source": "meta",
       "ad_id": "727735833708413",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13375,7 +13429,7 @@
     "meta:1390860195800029": {
       "source": "meta",
       "ad_id": "1390860195800029",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13401,7 +13455,7 @@
     "meta:707560699022789": {
       "source": "meta",
       "ad_id": "707560699022789",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13427,7 +13481,7 @@
     "meta:659896756985806": {
       "source": "meta",
       "ad_id": "659896756985806",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13453,7 +13507,7 @@
     "meta:1352239573229598": {
       "source": "meta",
       "ad_id": "1352239573229598",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13479,7 +13533,7 @@
     "meta:1458266789098296": {
       "source": "meta",
       "ad_id": "1458266789098296",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13505,7 +13559,7 @@
     "meta:738488179054016": {
       "source": "meta",
       "ad_id": "738488179054016",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13531,7 +13585,7 @@
     "meta:898872469196997": {
       "source": "meta",
       "ad_id": "898872469196997",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13557,7 +13611,7 @@
     "meta:666184502410895": {
       "source": "meta",
       "ad_id": "666184502410895",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13583,7 +13637,7 @@
     "meta:1866508770912182": {
       "source": "meta",
       "ad_id": "1866508770912182",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13609,7 +13663,7 @@
     "meta:1466754624996466": {
       "source": "meta",
       "ad_id": "1466754624996466",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13635,7 +13689,7 @@
     "meta:699043299398099": {
       "source": "meta",
       "ad_id": "699043299398099",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13661,7 +13715,7 @@
     "meta:1255019343502786": {
       "source": "meta",
       "ad_id": "1255019343502786",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13687,7 +13741,7 @@
     "meta:914068818189397": {
       "source": "meta",
       "ad_id": "914068818189397",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13713,7 +13767,7 @@
     "meta:1499920404659792": {
       "source": "meta",
       "ad_id": "1499920404659792",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13739,7 +13793,7 @@
     "meta:1356816266219775": {
       "source": "meta",
       "ad_id": "1356816266219775",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13765,7 +13819,7 @@
     "meta:2410796682690268": {
       "source": "meta",
       "ad_id": "2410796682690268",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13791,7 +13845,7 @@
     "meta:2073625080116074": {
       "source": "meta",
       "ad_id": "2073625080116074",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13817,7 +13871,7 @@
     "meta:2142397053249696": {
       "source": "meta",
       "ad_id": "2142397053249696",
-      "advertiser": "Notino (8)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13843,7 +13897,7 @@
     "meta:2576950849365016": {
       "source": "meta",
       "ad_id": "2576950849365016",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13869,7 +13923,7 @@
     "meta:1411638697027626": {
       "source": "meta",
       "ad_id": "1411638697027626",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13895,7 +13949,7 @@
     "meta:1030619162548766": {
       "source": "meta",
       "ad_id": "1030619162548766",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13921,7 +13975,7 @@
     "meta:4186781291572473": {
       "source": "meta",
       "ad_id": "4186781291572473",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13947,7 +14001,7 @@
     "meta:1360728242416201": {
       "source": "meta",
       "ad_id": "1360728242416201",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13973,7 +14027,7 @@
     "meta:801722526170150": {
       "source": "meta",
       "ad_id": "801722526170150",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -13999,7 +14053,7 @@
     "meta:1628586611483555": {
       "source": "meta",
       "ad_id": "1628586611483555",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14025,7 +14079,7 @@
     "meta:1588661985905418": {
       "source": "meta",
       "ad_id": "1588661985905418",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14051,7 +14105,7 @@
     "meta:1173224491576161": {
       "source": "meta",
       "ad_id": "1173224491576161",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14077,7 +14131,7 @@
     "meta:1370161214812908": {
       "source": "meta",
       "ad_id": "1370161214812908",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14103,7 +14157,7 @@
     "meta:873725088323205": {
       "source": "meta",
       "ad_id": "873725088323205",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14129,7 +14183,7 @@
     "meta:1435412281685926": {
       "source": "meta",
       "ad_id": "1435412281685926",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14155,7 +14209,7 @@
     "meta:25416344927989512": {
       "source": "meta",
       "ad_id": "25416344927989512",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14181,7 +14235,7 @@
     "meta:863635772662577": {
       "source": "meta",
       "ad_id": "863635772662577",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14207,7 +14261,7 @@
     "meta:4110894669202583": {
       "source": "meta",
       "ad_id": "4110894669202583",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14233,7 +14287,7 @@
     "meta:2037544997094112": {
       "source": "meta",
       "ad_id": "2037544997094112",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14259,7 +14313,7 @@
     "meta:1857023931557626": {
       "source": "meta",
       "ad_id": "1857023931557626",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14285,7 +14339,7 @@
     "meta:1126230393046146": {
       "source": "meta",
       "ad_id": "1126230393046146",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14311,7 +14365,7 @@
     "meta:822372617182393": {
       "source": "meta",
       "ad_id": "822372617182393",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14337,7 +14391,7 @@
     "meta:24869532312727603": {
       "source": "meta",
       "ad_id": "24869532312727603",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14363,7 +14417,7 @@
     "meta:1563444268638670": {
       "source": "meta",
       "ad_id": "1563444268638670",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14389,7 +14443,7 @@
     "meta:1435565237834797": {
       "source": "meta",
       "ad_id": "1435565237834797",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14415,7 +14469,7 @@
     "meta:1519540473506131": {
       "source": "meta",
       "ad_id": "1519540473506131",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14442,7 +14496,7 @@
     "meta:868847548816590": {
       "source": "meta",
       "ad_id": "868847548816590",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14468,7 +14522,7 @@
     "meta:1246081930943326": {
       "source": "meta",
       "ad_id": "1246081930943326",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14495,7 +14549,7 @@
     "meta:1888423635120327": {
       "source": "meta",
       "ad_id": "1888423635120327",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14521,7 +14575,7 @@
     "meta:1529762124842668": {
       "source": "meta",
       "ad_id": "1529762124842668",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14547,7 +14601,7 @@
     "meta:2054829418750430": {
       "source": "meta",
       "ad_id": "2054829418750430",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14573,7 +14627,7 @@
     "meta:27185357971085486": {
       "source": "meta",
       "ad_id": "27185357971085486",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14599,7 +14653,7 @@
     "meta:2251812805564859": {
       "source": "meta",
       "ad_id": "2251812805564859",
-      "advertiser": "Notino (9)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14626,7 +14680,7 @@
     "meta:1055372176732619": {
       "source": "meta",
       "ad_id": "1055372176732619",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14652,7 +14706,7 @@
     "meta:805791841832997": {
       "source": "meta",
       "ad_id": "805791841832997",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14678,7 +14732,7 @@
     "meta:1175442187864903": {
       "source": "meta",
       "ad_id": "1175442187864903",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14704,7 +14758,7 @@
     "meta:898430486229019": {
       "source": "meta",
       "ad_id": "898430486229019",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14730,7 +14784,7 @@
     "meta:701744742892011": {
       "source": "meta",
       "ad_id": "701744742892011",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14756,7 +14810,7 @@
     "meta:1252380260397146": {
       "source": "meta",
       "ad_id": "1252380260397146",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14782,7 +14836,7 @@
     "meta:1329796578499199": {
       "source": "meta",
       "ad_id": "1329796578499199",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14808,7 +14862,7 @@
     "meta:1538662744511853": {
       "source": "meta",
       "ad_id": "1538662744511853",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14834,7 +14888,7 @@
     "meta:649831928192396": {
       "source": "meta",
       "ad_id": "649831928192396",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14860,7 +14914,7 @@
     "meta:2897659873757261": {
       "source": "meta",
       "ad_id": "2897659873757261",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14886,7 +14940,7 @@
     "meta:1271513671162307": {
       "source": "meta",
       "ad_id": "1271513671162307",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14912,7 +14966,7 @@
     "meta:1514257612944393": {
       "source": "meta",
       "ad_id": "1514257612944393",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14938,7 +14992,7 @@
     "meta:2770350106658209": {
       "source": "meta",
       "ad_id": "2770350106658209",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14964,7 +15018,7 @@
     "meta:2988966144632992": {
       "source": "meta",
       "ad_id": "2988966144632992",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -14990,7 +15044,7 @@
     "meta:1521188932918596": {
       "source": "meta",
       "ad_id": "1521188932918596",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15016,7 +15070,7 @@
     "meta:854933297052871": {
       "source": "meta",
       "ad_id": "854933297052871",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15042,7 +15096,7 @@
     "meta:742155951795730": {
       "source": "meta",
       "ad_id": "742155951795730",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15068,7 +15122,7 @@
     "meta:1200595888583217": {
       "source": "meta",
       "ad_id": "1200595888583217",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15094,7 +15148,7 @@
     "meta:1466557318552648": {
       "source": "meta",
       "ad_id": "1466557318552648",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15120,7 +15174,7 @@
     "meta:1574171494018059": {
       "source": "meta",
       "ad_id": "1574171494018059",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15146,7 +15200,7 @@
     "meta:1573944770996869": {
       "source": "meta",
       "ad_id": "1573944770996869",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15172,7 +15226,7 @@
     "meta:2117387105498759": {
       "source": "meta",
       "ad_id": "2117387105498759",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15198,7 +15252,7 @@
     "meta:1271282017854861": {
       "source": "meta",
       "ad_id": "1271282017854861",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15224,7 +15278,7 @@
     "meta:1476608957264738": {
       "source": "meta",
       "ad_id": "1476608957264738",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15250,7 +15304,7 @@
     "meta:1244088571258025": {
       "source": "meta",
       "ad_id": "1244088571258025",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15276,7 +15330,7 @@
     "meta:3762421500726970": {
       "source": "meta",
       "ad_id": "3762421500726970",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15302,7 +15356,7 @@
     "meta:2030114184604943": {
       "source": "meta",
       "ad_id": "2030114184604943",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15328,7 +15382,7 @@
     "meta:1349239330238308": {
       "source": "meta",
       "ad_id": "1349239330238308",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15354,7 +15408,7 @@
     "meta:4658076217752533": {
       "source": "meta",
       "ad_id": "4658076217752533",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15380,7 +15434,7 @@
     "meta:1709304840242234": {
       "source": "meta",
       "ad_id": "1709304840242234",
-      "advertiser": "Notino (10)",
+      "advertiser": "Notino",
       "advertiser_type": "retailer",
       "kbeauty": false,
       "countries": [],
@@ -15406,10 +15460,12 @@
     "meta:1943382259643113": {
       "source": "meta",
       "ad_id": "1943382259643113",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15432,10 +15488,12 @@
     "meta:1009769451501244": {
       "source": "meta",
       "ad_id": "1009769451501244",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15458,10 +15516,12 @@
     "meta:3260832187461055": {
       "source": "meta",
       "ad_id": "3260832187461055",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15484,10 +15544,12 @@
     "meta:1603748691351144": {
       "source": "meta",
       "ad_id": "1603748691351144",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15510,10 +15572,12 @@
     "meta:1307832500944547": {
       "source": "meta",
       "ad_id": "1307832500944547",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15536,10 +15600,12 @@
     "meta:2114160179145729": {
       "source": "meta",
       "ad_id": "2114160179145729",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15562,10 +15628,12 @@
     "meta:1916644212327932": {
       "source": "meta",
       "ad_id": "1916644212327932",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15588,10 +15656,12 @@
     "meta:2079631029577968": {
       "source": "meta",
       "ad_id": "2079631029577968",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15614,10 +15684,12 @@
     "meta:1331874498907706": {
       "source": "meta",
       "ad_id": "1331874498907706",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15640,10 +15712,12 @@
     "meta:36304262649189177": {
       "source": "meta",
       "ad_id": "36304262649189177",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-11",
       "is_active": true,
@@ -15666,10 +15740,12 @@
     "meta:1814672873250217": {
       "source": "meta",
       "ad_id": "1814672873250217",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15692,10 +15768,12 @@
     "meta:958703926987296": {
       "source": "meta",
       "ad_id": "958703926987296",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-16",
       "is_active": true,
@@ -15718,10 +15796,12 @@
     "meta:2280111319462331": {
       "source": "meta",
       "ad_id": "2280111319462331",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15744,10 +15824,12 @@
     "meta:1496624078092690": {
       "source": "meta",
       "ad_id": "1496624078092690",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15770,10 +15852,12 @@
     "meta:1691543528636933": {
       "source": "meta",
       "ad_id": "1691543528636933",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15796,10 +15880,12 @@
     "meta:1745715133452972": {
       "source": "meta",
       "ad_id": "1745715133452972",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15822,10 +15908,12 @@
     "meta:2043644467028439": {
       "source": "meta",
       "ad_id": "2043644467028439",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15848,10 +15936,12 @@
     "meta:2006848830218193": {
       "source": "meta",
       "ad_id": "2006848830218193",
-      "advertiser": "Marionnaud (FR)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -15874,10 +15964,12 @@
     "meta:1657194585588471": {
       "source": "meta",
       "ad_id": "1657194585588471",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-05-26",
       "is_active": true,
@@ -15900,10 +15992,12 @@
     "meta:5383108568580371": {
       "source": "meta",
       "ad_id": "5383108568580371",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-09",
       "is_active": true,
@@ -15926,10 +16020,12 @@
     "meta:1217211740399771": {
       "source": "meta",
       "ad_id": "1217211740399771",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-03",
       "is_active": true,
@@ -15952,10 +16048,12 @@
     "meta:991267426855695": {
       "source": "meta",
       "ad_id": "991267426855695",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-09",
       "is_active": true,
@@ -15978,10 +16076,12 @@
     "meta:2926560877727535": {
       "source": "meta",
       "ad_id": "2926560877727535",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-15",
       "is_active": true,
@@ -16004,10 +16104,12 @@
     "meta:2029591754312396": {
       "source": "meta",
       "ad_id": "2029591754312396",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-15",
       "is_active": true,
@@ -16030,10 +16132,12 @@
     "meta:821429097514054": {
       "source": "meta",
       "ad_id": "821429097514054",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "영상",
       "started": "2026-06-08",
       "is_active": true,
@@ -16057,10 +16161,12 @@
     "meta:1004783815276129": {
       "source": "meta",
       "ad_id": "1004783815276129",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-12",
       "is_active": true,
@@ -16083,10 +16189,12 @@
     "meta:1011596254552410": {
       "source": "meta",
       "ad_id": "1011596254552410",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -16109,10 +16217,12 @@
     "meta:1865090320854699": {
       "source": "meta",
       "ad_id": "1865090320854699",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-08",
       "is_active": true,
@@ -16135,10 +16245,12 @@
     "meta:1371420018181063": {
       "source": "meta",
       "ad_id": "1371420018181063",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-07",
       "is_active": true,
@@ -16161,10 +16273,12 @@
     "meta:2123954878171344": {
       "source": "meta",
       "ad_id": "2123954878171344",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-10",
       "is_active": true,
@@ -16187,10 +16301,12 @@
     "meta:1018133860733340": {
       "source": "meta",
       "ad_id": "1018133860733340",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": null,
       "is_active": false,
@@ -16213,10 +16329,12 @@
     "meta:1522635009533152": {
       "source": "meta",
       "ad_id": "1522635009533152",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-13",
       "is_active": true,
@@ -16239,10 +16357,12 @@
     "meta:1360747652583120": {
       "source": "meta",
       "ad_id": "1360747652583120",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-05",
       "is_active": true,
@@ -16265,10 +16385,12 @@
     "meta:1034463262241124": {
       "source": "meta",
       "ad_id": "1034463262241124",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": null,
       "is_active": false,
@@ -16291,10 +16413,12 @@
     "meta:1359217299598607": {
       "source": "meta",
       "ad_id": "1359217299598607",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-09",
       "is_active": true,
@@ -16317,10 +16441,12 @@
     "meta:1325075455645801": {
       "source": "meta",
       "ad_id": "1325075455645801",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": null,
       "is_active": false,
@@ -16343,10 +16469,12 @@
     "meta:1191890089697266": {
       "source": "meta",
       "ad_id": "1191890089697266",
-      "advertiser": "Marionnaud (IT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "IT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-10",
       "is_active": true,
@@ -16369,10 +16497,12 @@
     "meta:2602657876764851": {
       "source": "meta",
       "ad_id": "2602657876764851",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "단일이미지",
       "started": "2026-01-05",
       "is_active": true,
@@ -16395,10 +16525,12 @@
     "meta:1324715875781237": {
       "source": "meta",
       "ad_id": "1324715875781237",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "영상",
       "started": "2026-06-15",
       "is_active": true,
@@ -16422,10 +16554,12 @@
     "meta:4471540759835715": {
       "source": "meta",
       "ad_id": "4471540759835715",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "영상",
       "started": "2026-06-15",
       "is_active": true,
@@ -16449,10 +16583,12 @@
     "meta:2312285169512220": {
       "source": "meta",
       "ad_id": "2312285169512220",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "영상",
       "started": "2026-06-19",
       "is_active": true,
@@ -16476,10 +16612,12 @@
     "meta:1375367104409282": {
       "source": "meta",
       "ad_id": "1375367104409282",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-15",
       "is_active": true,
@@ -16502,10 +16640,12 @@
     "meta:2271681720034396": {
       "source": "meta",
       "ad_id": "2271681720034396",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "영상",
       "started": null,
       "is_active": false,
@@ -16529,10 +16669,12 @@
     "meta:1017140560678215": {
       "source": "meta",
       "ad_id": "1017140560678215",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-15",
       "is_active": true,
@@ -16555,10 +16697,12 @@
     "meta:1933860327316386": {
       "source": "meta",
       "ad_id": "1933860327316386",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "영상",
       "started": null,
       "is_active": false,
@@ -16582,10 +16726,12 @@
     "meta:4485799375033892": {
       "source": "meta",
       "ad_id": "4485799375033892",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "영상",
       "started": "2026-06-22",
       "is_active": true,
@@ -16609,10 +16755,12 @@
     "meta:2677838845945014": {
       "source": "meta",
       "ad_id": "2677838845945014",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-22",
       "is_active": true,
@@ -16635,10 +16783,12 @@
     "meta:792970227139475": {
       "source": "meta",
       "ad_id": "792970227139475",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "영상",
       "started": "2026-06-22",
       "is_active": true,
@@ -16662,10 +16812,12 @@
     "meta:1021821113765817": {
       "source": "meta",
       "ad_id": "1021821113765817",
-      "advertiser": "Marionnaud (AT)",
+      "advertiser": "Marionnaud",
       "advertiser_type": "retailer",
       "kbeauty": false,
-      "countries": [],
+      "countries": [
+        "AT"
+      ],
       "format": "단일이미지",
       "started": "2026-06-22",
       "is_active": true,
@@ -18967,10 +19119,12 @@
     "meta:26557441197261535": {
       "source": "meta",
       "ad_id": "26557441197261535",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-05-15",
       "is_active": true,
@@ -18994,10 +19148,12 @@
     "meta:2129068651284069": {
       "source": "meta",
       "ad_id": "2129068651284069",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-04",
       "is_active": true,
@@ -19020,10 +19176,12 @@
     "meta:973677382164178": {
       "source": "meta",
       "ad_id": "973677382164178",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-16",
       "is_active": true,
@@ -19046,10 +19204,12 @@
     "meta:27430787133275416": {
       "source": "meta",
       "ad_id": "27430787133275416",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-06-04",
       "is_active": true,
@@ -19073,10 +19233,12 @@
     "meta:1614726112925590": {
       "source": "meta",
       "ad_id": "1614726112925590",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-06-05",
       "is_active": true,
@@ -19100,10 +19262,12 @@
     "meta:1654447018926746": {
       "source": "meta",
       "ad_id": "1654447018926746",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-29",
       "is_active": true,
@@ -19127,10 +19291,12 @@
     "meta:1106805698304678": {
       "source": "meta",
       "ad_id": "1106805698304678",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-31",
       "is_active": true,
@@ -19154,10 +19320,12 @@
     "meta:979891471504991": {
       "source": "meta",
       "ad_id": "979891471504991",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-06-10",
       "is_active": true,
@@ -19180,10 +19348,12 @@
     "meta:1505989507838757": {
       "source": "meta",
       "ad_id": "1505989507838757",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-06",
       "is_active": true,
@@ -19206,10 +19376,12 @@
     "meta:1296342035897841": {
       "source": "meta",
       "ad_id": "1296342035897841",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-07",
       "is_active": true,
@@ -19232,10 +19404,12 @@
     "meta:1449176800181132": {
       "source": "meta",
       "ad_id": "1449176800181132",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-19",
       "is_active": true,
@@ -19259,10 +19433,12 @@
     "meta:1021635793533245": {
       "source": "meta",
       "ad_id": "1021635793533245",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-06-12",
       "is_active": true,
@@ -19285,10 +19461,12 @@
     "meta:772889435909620": {
       "source": "meta",
       "ad_id": "772889435909620",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-06-02",
       "is_active": true,
@@ -19312,10 +19490,12 @@
     "meta:28134103302843855": {
       "source": "meta",
       "ad_id": "28134103302843855",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-06-04",
       "is_active": true,
@@ -19339,10 +19519,12 @@
     "meta:1720073702318323": {
       "source": "meta",
       "ad_id": "1720073702318323",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-06-04",
       "is_active": true,
@@ -19365,10 +19547,12 @@
     "meta:1841662376987669": {
       "source": "meta",
       "ad_id": "1841662376987669",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-16",
       "is_active": true,
@@ -19391,10 +19575,12 @@
     "meta:1250811207127329": {
       "source": "meta",
       "ad_id": "1250811207127329",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-06-02",
       "is_active": true,
@@ -19418,10 +19604,12 @@
     "meta:1686208405764546": {
       "source": "meta",
       "ad_id": "1686208405764546",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "카루셀",
       "started": "2026-06-16",
       "is_active": true,
@@ -19444,10 +19632,12 @@
     "meta:1744572423401964": {
       "source": "meta",
       "ad_id": "1744572423401964",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-06-16",
       "is_active": true,
@@ -19471,10 +19661,12 @@
     "meta:1643256670229099": {
       "source": "meta",
       "ad_id": "1643256670229099",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-05-30",
       "is_active": true,
@@ -19498,10 +19690,12 @@
     "meta:1550824746719260": {
       "source": "meta",
       "ad_id": "1550824746719260",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-05-29",
       "is_active": true,
@@ -19524,10 +19718,12 @@
     "meta:1357924069533212": {
       "source": "meta",
       "ad_id": "1357924069533212",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-04",
       "is_active": true,
@@ -19550,10 +19746,12 @@
     "meta:1320896512888976": {
       "source": "meta",
       "ad_id": "1320896512888976",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-16",
       "is_active": true,
@@ -19576,10 +19774,12 @@
     "meta:1668081707790650": {
       "source": "meta",
       "ad_id": "1668081707790650",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-12",
       "is_active": true,
@@ -19602,10 +19802,12 @@
     "meta:806382535884593": {
       "source": "meta",
       "ad_id": "806382535884593",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-05-01",
       "is_active": true,
@@ -19629,10 +19831,12 @@
     "meta:1323660306487940": {
       "source": "meta",
       "ad_id": "1323660306487940",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-03-31",
       "is_active": true,
@@ -19656,10 +19860,12 @@
     "meta:4444516835837038": {
       "source": "meta",
       "ad_id": "4444516835837038",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-09",
       "is_active": true,
@@ -19682,10 +19888,12 @@
     "meta:3940704266232546": {
       "source": "meta",
       "ad_id": "3940704266232546",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "영상",
       "started": "2026-06-18",
       "is_active": true,
@@ -19709,10 +19917,12 @@
     "meta:1715151819526090": {
       "source": "meta",
       "ad_id": "1715151819526090",
-      "advertiser": "Stylevana (ES)",
+      "advertiser": "Stylevana",
       "advertiser_type": "retailer",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "ES"
+      ],
       "format": "단일이미지",
       "started": "2026-06-16",
       "is_active": true,
@@ -23951,10 +24161,12 @@
     "meta:4296039807350596": {
       "source": "meta",
       "ad_id": "4296039807350596",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-04-01",
       "is_active": true,
@@ -23978,10 +24190,12 @@
     "meta:1514037100326838": {
       "source": "meta",
       "ad_id": "1514037100326838",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "영상",
       "started": "2026-04-01",
       "is_active": true,
@@ -24005,10 +24219,12 @@
     "meta:1451854929538748": {
       "source": "meta",
       "ad_id": "1451854929538748",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-05-13",
       "is_active": true,
@@ -24031,10 +24247,12 @@
     "meta:2139757489928441": {
       "source": "meta",
       "ad_id": "2139757489928441",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-03-28",
       "is_active": true,
@@ -24057,10 +24275,12 @@
     "meta:2022718168594574": {
       "source": "meta",
       "ad_id": "2022718168594574",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-04-14",
       "is_active": true,
@@ -24083,10 +24303,12 @@
     "meta:1624514032162103": {
       "source": "meta",
       "ad_id": "1624514032162103",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-05-21",
       "is_active": true,
@@ -24109,10 +24331,12 @@
     "meta:27942145545374662": {
       "source": "meta",
       "ad_id": "27942145545374662",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-05-27",
       "is_active": true,
@@ -24135,10 +24359,12 @@
     "meta:1239788631357984": {
       "source": "meta",
       "ad_id": "1239788631357984",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-05-21",
       "is_active": true,
@@ -24161,10 +24387,12 @@
     "meta:4313082942340413": {
       "source": "meta",
       "ad_id": "4313082942340413",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-05-27",
       "is_active": true,
@@ -24187,10 +24415,12 @@
     "meta:1724657288680549": {
       "source": "meta",
       "ad_id": "1724657288680549",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-06-22",
       "is_active": true,
@@ -24213,10 +24443,12 @@
     "meta:1779540019685113": {
       "source": "meta",
       "ad_id": "1779540019685113",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-05-21",
       "is_active": true,
@@ -24239,10 +24471,12 @@
     "meta:1319373696910065": {
       "source": "meta",
       "ad_id": "1319373696910065",
-      "advertiser": "Torriden (FR)",
+      "advertiser": "Torriden",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "FR"
+      ],
       "format": "단일이미지",
       "started": "2026-05-21",
       "is_active": true,
@@ -25787,10 +26021,12 @@
     "meta:1676303566974338": {
       "source": "meta",
       "ad_id": "1676303566974338",
-      "advertiser": "Laneige (UK)",
+      "advertiser": "Laneige",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-22",
       "is_active": true,
@@ -25814,10 +26050,12 @@
     "meta:1015697957826384": {
       "source": "meta",
       "ad_id": "1015697957826384",
-      "advertiser": "Laneige (UK)",
+      "advertiser": "Laneige",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-22",
       "is_active": true,
@@ -25840,10 +26078,12 @@
     "meta:1692522088663395": {
       "source": "meta",
       "ad_id": "1692522088663395",
-      "advertiser": "Laneige (UK)",
+      "advertiser": "Laneige",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-22",
       "is_active": true,
@@ -25867,10 +26107,12 @@
     "meta:2229016727855008": {
       "source": "meta",
       "ad_id": "2229016727855008",
-      "advertiser": "Laneige (UK)",
+      "advertiser": "Laneige",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-22",
       "is_active": true,
@@ -25893,10 +26135,12 @@
     "meta:1011205845202120": {
       "source": "meta",
       "ad_id": "1011205845202120",
-      "advertiser": "Laneige (UK)",
+      "advertiser": "Laneige",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-22",
       "is_active": true,
@@ -25919,10 +26163,12 @@
     "meta:1321482479529522": {
       "source": "meta",
       "ad_id": "1321482479529522",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -25945,10 +26191,12 @@
     "meta:1338983401539700": {
       "source": "meta",
       "ad_id": "1338983401539700",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "카루셀",
       "started": "2026-06-19",
       "is_active": true,
@@ -25971,10 +26219,12 @@
     "meta:1671578967443703": {
       "source": "meta",
       "ad_id": "1671578967443703",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -25997,10 +26247,12 @@
     "meta:1517038756870706": {
       "source": "meta",
       "ad_id": "1517038756870706",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26023,10 +26275,12 @@
     "meta:891685649910879": {
       "source": "meta",
       "ad_id": "891685649910879",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26049,10 +26303,12 @@
     "meta:2219417118861483": {
       "source": "meta",
       "ad_id": "2219417118861483",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26075,10 +26331,12 @@
     "meta:3261895527329880": {
       "source": "meta",
       "ad_id": "3261895527329880",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-20",
       "is_active": true,
@@ -26102,10 +26360,12 @@
     "meta:892473227205801": {
       "source": "meta",
       "ad_id": "892473227205801",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-19",
       "is_active": true,
@@ -26129,10 +26389,12 @@
     "meta:1701582597701214": {
       "source": "meta",
       "ad_id": "1701582597701214",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26155,10 +26417,12 @@
     "meta:1310919990687251": {
       "source": "meta",
       "ad_id": "1310919990687251",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26181,10 +26445,12 @@
     "meta:2509824039449281": {
       "source": "meta",
       "ad_id": "2509824039449281",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26207,10 +26473,12 @@
     "meta:1629801278091018": {
       "source": "meta",
       "ad_id": "1629801278091018",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-20",
       "is_active": true,
@@ -26234,10 +26502,12 @@
     "meta:1541295174307323": {
       "source": "meta",
       "ad_id": "1541295174307323",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26260,10 +26530,12 @@
     "meta:1480709223330833": {
       "source": "meta",
       "ad_id": "1480709223330833",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-19",
       "is_active": true,
@@ -26287,10 +26559,12 @@
     "meta:1038564058724996": {
       "source": "meta",
       "ad_id": "1038564058724996",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "단일이미지",
       "started": "2026-06-19",
       "is_active": true,
@@ -26313,10 +26587,12 @@
     "meta:1567151241789977": {
       "source": "meta",
       "ad_id": "1567151241789977",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-20",
       "is_active": true,
@@ -26340,10 +26616,12 @@
     "meta:2152153642229521": {
       "source": "meta",
       "ad_id": "2152153642229521",
-      "advertiser": "Innisfree (UK)",
+      "advertiser": "Innisfree",
       "advertiser_type": "brand",
       "kbeauty": true,
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "format": "영상",
       "started": "2026-06-19",
       "is_active": true,

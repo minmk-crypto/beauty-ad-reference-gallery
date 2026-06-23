@@ -145,12 +145,13 @@ async function download(url, dest) {
       const ads = await page.evaluate(PAGE_EXTRACT);
       for (const ad of ads) {
         const key = `meta:${ad.library_id}`;
-        if (items[key]) continue;
+        // 동일 광고가 다른 지역 페이지에도 있으면 country union (같은 브랜드로 묶임)
+        if (items[key]) { if (adv.country && !items[key].countries.includes(adv.country)) items[key].countries.push(adv.country); continue; }
         const copy = (ad.copy || '').split('\n').filter(l => l.trim() !== adv.label && l.trim() !== '광고' && l.trim() !== 'Sponsored').join('\n').trim();
         items[key] = {
           source: 'meta', ad_id: ad.library_id,
           advertiser: adv.label, advertiser_type: adv.type || 'brand', kbeauty: !!adv.kbeauty,
-          countries: [], format: ad.format, started: ad.started, is_active: !!ad.active, collation: ad.collation,
+          countries: adv.country ? [adv.country] : [], format: ad.format, started: ad.started, is_active: !!ad.active, collation: ad.collation,
           copy, cta: ad.cta, landing_url: ad.landing_url, video_url: ad.video_url,
           detail_url: detailUrl(ad.library_id),
           _thumb: ad.thumb_url, _page_id: adv.page_id, _new: !seen.has(key),
