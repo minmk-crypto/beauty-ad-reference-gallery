@@ -150,7 +150,7 @@ function card(a,i){
   return '<article class="card'+(a.active?'':' off')+'" data-i="'+i+'" tabindex="0">'+
     '<div class="cover"'+cs+'><span class="srcbadge '+a.src+'">'+SRCLBL[a.src]+'</span>'+cover+play+ver+'</div>'+
     '<div class="cbody">'+
-      '<div class="tagrow"><span class="advtag" style="color:'+a.bc+';background:color-mix(in srgb,'+a.bc+' 13%,transparent)">'+esc(a.adv)+'</span>'+(a.kb?'<span class="kbtag">K</span>':'')+'</div>'+
+      '<div class="tagrow"><span class="advtag" style="color:'+a.bc+';background:color-mix(in srgb,'+a.bc+' 13%,transparent)">'+esc(a.adv)+'</span>'+(a.kb?'<span class="kbtag">K-Beauty</span>':'')+'</div>'+
       (a.summary?'<div class="title">'+esc(a.summary)+'</div>':'')+
       '<div class="excerpt">'+esc(a.copy)+'</div>'+
       '<div class="pills">'+pills(a)+'</div>'+
