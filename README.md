@@ -60,6 +60,36 @@ render.js           docs/index.html + assets 재생성
 
 `source` · `advertiser` · `advertiser_type` · `kbeauty` · `countries[]` · `format` · `started` · `is_active` · `copy` · `cta` · `landing_url` · `video_url` · `detail_url` · `media_rel` · `metrics`(TikTok ctr/like) · `tags`{hook_type, appeal, tone, summary}
 
+## 데이터 저장 구조
+
+메타데이터는 JSON, 이미지·영상 파일은 실제 파일로 디스크에 저장하는 하이브리드 구조입니다. JSON에는 미디어를 base64로 넣지 않고 파일을 가리키는 **상대경로**만 담습니다. `gallery.json`이 카탈로그(색인), `docs/assets/`가 실물 보관소 역할을 하며 `media_rel` 경로로 둘을 잇습니다.
+
+**메타데이터 → `data/`**
+
+| 파일 | 내용 | 커밋 |
+|---|---|---|
+| `gallery.json` | 통합 본체 — 광고주·카피·태그·국가·포맷 + 미디어 경로(`media_rel`)·영상 URL | O |
+| `tags.json` | 비전 태깅 결과 (hook/appeal/tone/summary) | O |
+| `state.json` | 신규 감지·활성 상태 추적 | O |
+| `manifest-meta.json` / `manifest-tiktok.json` | 수집 중간 산출물 | X (gitignore) |
+| `.pwprofile` / `.ttprofile` | 브라우저 프로파일 | X (gitignore) |
+
+**미디어 파일 → `docs/assets/`**
+
+- 이미지·영상 커버·압축 영상을 실제 파일로 다운로드해 저장합니다.
+- Meta는 광고주 page_id별 하위 폴더 — `assets/meta/<page_id>/<ad_id>.jpg`
+- TikTok은 ad_id별 커버 `.jpg` + 압축 영상 `.mp4` 쌍 — `assets/tiktok/<ad_id>.jpg`
+
+```
+gallery.json 의 한 항목
+  media_rel: "assets/meta/16453004404/1738577247511359.jpg"   ← 로컬 파일 경로
+  video_url: "https://...tiktokcdn.com/..."                   ← 원본 CDN (만료 가능)
+```
+
+`render.js`가 `gallery.json`을 읽어 `media_rel` 경로로 `<img>`/`<video>` 태그를 만들고, 브라우저는 같은 `docs/` 안의 파일을 로드합니다. 영상은 로컬 `.mp4`가 있으면 인라인 재생, prune되거나 없으면 `video_url`(CDN)로, 그마저 만료되면 원본 링크로 폴백합니다.
+
+미디어가 실파일이므로 `docs/`는 수백 MB 규모로 커집니다. `state.json`으로 이미 본 광고를 걸러 신규 미디어만 받고, `prune.js`가 GitHub Pages 용량 한계(약 1GB) 안에서 자동 정리합니다.
+
 ## 로컬 실행
 
 ```bash
