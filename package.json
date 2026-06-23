@@ -1,10 +1,12 @@
 {
-  "name": "fnb-ad-reference-gallery",
+  "name": "beauty-ad-reference-gallery",
   "version": "1.0.0",
-  "description": "F&B 경쟁사 Meta 광고 크리에이티브 레퍼런스 갤러리 — Ad Library 수집 + 비전 태깅 + 필터 가능한 HTML 갤러리",
+  "description": "유럽 뷰티 광고 레퍼런스 갤러리 — Meta 광고 라이브러리 + TikTok Creative Center 수집 + 비전 태깅 + 필터 가능한 HTML 갤러리",
   "scripts": {
-    "collect": "node collect.js",
-    "commit": "node collect.js --commit",
+    "collect:meta": "node collect-meta.js",
+    "collect:tiktok": "node collect-tiktok.js",
+    "tag": "node tag-ci.js",
+    "commit": "node commit.js",
     "render": "node render.js"
   },
   "license": "MIT",
