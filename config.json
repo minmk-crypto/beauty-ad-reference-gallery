@@ -14,6 +14,10 @@
       "max_ads_per_advertiser": 200,
       "scroll_idle_rounds": 3,
       "scroll_pause_ms": 1500,
+      "advertisers_sheet": {
+        "csv_url": "",
+        "_help": "마케터가 관리하는 '광고주 관리 시트'의 CSV 게시 URL. 비워두면 아래 advertisers 목록을 그대로 사용. 설정 시 월·수·금 갱신 때 sync-advertisers.js 가 이 시트를 SSOT로 advertisers 를 덮어쓴다. 환경변수 ADVERTISERS_SHEET_CSV_URL 이 있으면 그쪽이 우선. 설정법은 docs/advertiser-sheet-guide.md 참고."
+      },
       "advertisers": [
         { "label": "Sephora", "page_id": "16453004404", "type": "retailer", "kbeauty": false, "country": "" },
         { "label": "Nocibé", "page_id": "104095453961", "type": "retailer", "kbeauty": false, "country": "" },

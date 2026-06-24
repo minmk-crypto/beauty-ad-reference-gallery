@@ -18,6 +18,7 @@
 ## 동작 방식
 
 ```
+sync-advertisers.js Meta 추적 광고주를 마케터 관리 시트(CSV)에서 동기화 → config.json
 collect-meta.js     Meta 광고주별 신규 수집 (country=ALL) → data/manifest-meta.json
 collect-tiktok.js   TikTok 상위 광고 신규 수집 → data/manifest-tiktok.json
    ↓ 신규 광고 커버를 Claude 비전으로 판독 → data/tags.json
@@ -36,6 +37,17 @@ render.js           docs/index.html + assets 재생성
 
 `format`(영상/이미지/캐러셀)은 소스 DOM에서 자동 판정하며 태깅 대상이 아닙니다.
 
+## 광고주 관리 시트 (마케터용)
+
+Meta 추적 대상(광고주 목록)은 마케터가 직접 관리하는 **Google Sheet** 한 곳에서 정합니다. 시트를 고치면 다음 갱신 주기(월·수·금 03:00 KST)에 `sync-advertisers.js`가 시트를 읽어 `config.json`의 광고주 목록을 맞춥니다. 코드 수정이 필요 없습니다.
+
+- 인증/시크릿 없이 동작합니다 — 시트를 "웹에 게시(CSV)" 하거나 "링크 보기 공유" 상태로 두면 됩니다(추적 대상은 공개 경쟁사 페이지 ID라 민감정보가 아님).
+- 시트가 비었거나 접근 불가·CSV 깨짐이면 **직전 목록을 그대로 유지**합니다(빈 목록 사고 방지).
+- 시트 URL은 `config.json`의 `sources.meta.advertisers_sheet.csv_url` 또는 `ADVERTISERS_SHEET_CSV_URL` 시크릿으로 등록합니다(시크릿 우선).
+- 현재 추적 중인 광고주 전체는 [`advertisers-seed.csv`](advertisers-seed.csv)로 export되어 있어 시트 최초 생성 시 그대로 가져오면 됩니다.
+
+컬럼 설명·페이지 ID 찾는 법·최초 셋업은 **[docs/advertiser-sheet-guide.md](docs/advertiser-sheet-guide.md)** 참고.
+
 ## 갤러리 기능
 
 - 플랫폼(Meta/TikTok) · 광고주 유형(리테일러/브랜드) · 국가 · K뷰티 facet 필터
@@ -48,7 +60,9 @@ render.js           docs/index.html + assets 재생성
 
 | 파일 | 역할 |
 |---|---|
-| `config.json` | 수집 대상(Meta 광고주 목록·TikTok 산업/지역) + 태그 enum + 출력 설정 |
+| `config.json` | 수집 대상(Meta 광고주 목록·TikTok 산업/지역) + 광고주 시트 URL + 태그 enum + 출력 설정 |
+| `sync-advertisers.js` | 마케터 관리 시트(CSV) → `config.json` 광고주 목록 동기화 (fail-safe) |
+| `advertisers-seed.csv` | 현재 광고주 목록 export (시트 최초 생성용 시드) |
 | `collect-meta.js` | Meta 광고 라이브러리 수집 |
 | `collect-tiktok.js` | TikTok Creative Center 내부 API 수집 |
 | `commit.js` | 통합 스키마(`gallery.json`)로 머지 |
@@ -96,6 +110,7 @@ gallery.json 의 한 항목
 npm install
 npx playwright install chromium
 
+node sync-advertisers.js   # (시트 연결 시) 광고주 목록 동기화 — 미설정이면 자동 생략
 node collect-meta.js
 node collect-tiktok.js
 # → 신규 광고 비전 태깅 (data/tags.json)
