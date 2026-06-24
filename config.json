@@ -15,8 +15,8 @@
       "scroll_idle_rounds": 3,
       "scroll_pause_ms": 1500,
       "advertisers_sheet": {
-        "csv_url": "",
-        "_help": "마케터가 관리하는 '광고주 관리 시트'의 CSV 게시 URL. 비워두면 아래 advertisers 목록을 그대로 사용. 설정 시 월·수·금 갱신 때 sync-advertisers.js 가 이 시트를 SSOT로 advertisers 를 덮어쓴다. 환경변수 ADVERTISERS_SHEET_CSV_URL 이 있으면 그쪽이 우선. 설정법은 docs/advertiser-sheet-guide.md 참고."
+        "url": "https://docs.google.com/spreadsheets/d/1OPT_P_s7Lxq47RHHUbduiqJgNh6DrZD0/edit",
+        "_help": "마케터가 관리하는 '광고주 관리 시트' URL(편집·공유·게시·gviz·ID 어떤 형태든 OK — sync-advertisers.js 가 CSV export 엔드포인트를 자동 도출). 비우면 아래 advertisers 목록을 그대로 사용. 설정 시 월·수·금 갱신 때 이 시트를 SSOT로 advertisers 를 덮어쓴다. 환경변수 ADVERTISERS_SHEET_URL 이 우선. 시트는 '링크가 있는 모든 사용자: 뷰어' 여야 CI 에서 읽힌다. 설정법은 docs/advertiser-sheet-guide.md."
       },
       "advertisers": [
         { "label": "Sephora", "page_id": "16453004404", "type": "retailer", "kbeauty": false, "country": "" },

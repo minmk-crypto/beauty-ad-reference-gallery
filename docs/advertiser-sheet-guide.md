@@ -60,23 +60,23 @@
 
 이미 시트가 연결돼 있으면 이 절은 건너뜁니다.
 
-1. **시트 생성**: 새 Google Sheet 를 만들고, 저장소의 [`advertisers-seed.csv`](../advertisers-seed.csv)(현재 추적 중인 광고주 전체)를 가져오기(`파일 → 가져오기 → 업로드`)합니다. 첫 행이 헤더가 되도록 합니다.
-2. **마케터 공유**: `공유` 에서 마케터를 **편집자**로 추가합니다.
-3. **CSV 게시**(인증 없이 읽기용 — 둘 중 하나):
-   - **방법 A — 웹에 게시**: `파일 → 공유 → 웹에 게시 → (해당 시트) + CSV` 선택 → 나오는 URL
-     (`https://docs.google.com/spreadsheets/d/e/.../pub?output=csv`).
-   - **방법 B — 링크 공유 + gviz**: `공유` 를 `링크가 있는 모든 사용자: 뷰어` 로 두고
-     `https://docs.google.com/spreadsheets/d/<시트ID>/gviz/tq?tqx=out:csv&sheet=<탭이름>` 형식 URL 사용.
-4. **URL 등록**(둘 중 하나):
-   - `config.json` 의 `sources.meta.advertisers_sheet.csv_url` 에 붙여넣고 커밋, **또는**
-   - 저장소 `Settings → Secrets and variables → Actions` 에 `ADVERTISERS_SHEET_CSV_URL` 시크릿으로 등록(이 경우 URL 이 커밋되지 않음. 시크릿이 config 값보다 우선).
+담당자는 **시트 주소(URL)만** 넘기면 됩니다. "웹에 게시(CSV)" 같은 별도 변환은 필요 없습니다 — `sync-advertisers.js` 가 URL 에서 시트 ID 를 뽑아 CSV 읽기 엔드포인트를 자동으로 만듭니다(`.../export?format=csv`, 안 되면 `.../gviz/tq?tqx=out:csv` 순으로 시도). 편집/공유/게시/gviz/ID 어떤 형태의 URL 이든 받습니다.
 
-> 게시되는 데이터는 공개 경쟁사 페이지 ID 목록이라 민감정보가 아닙니다. 방법 A 가 CI 에서 가장 안정적입니다.
+1. **시트 생성**: 새 Google Sheet 에 저장소의 [`advertisers-seed.csv`](../advertisers-seed.csv)(현재 추적 중인 광고주 전체)를 가져오기(`파일 → 가져오기 → 업로드`). 첫 행이 헤더가 되도록 합니다. (이미 업로드한 `.xlsx` 가 있으면 그걸 사용해도 됩니다.)
+2. **마케터 공유**: `공유` 에서 마케터를 **편집자**로 추가합니다.
+3. **링크 읽기 공개**(필수): 같은 `공유` 창에서 일반 액세스를 **`링크가 있는 모든 사용자: 뷰어`** 로 둡니다.
+   - GitHub Actions(월·수·금 자동 갱신)는 로그인 없이 시트를 읽으므로, 비공개면 CI 에서 못 읽고 직전 목록을 유지합니다.
+   - 추적 대상은 공개 경쟁사 페이지 ID 목록이라 민감정보가 아닙니다.
+4. **URL 등록**(둘 중 하나):
+   - `config.json` 의 `sources.meta.advertisers_sheet.url` 에 시트 주소를 붙여넣고 커밋, **또는**
+   - 저장소 `Settings → Secrets and variables → Actions` 에 `ADVERTISERS_SHEET_URL` 시크릿으로 등록(URL 비공개 유지. 시크릿이 config 값보다 우선).
+
+> 업로드한 `.xlsx` 는 보통 그대로(`gviz` 경로) 읽히지만, 더 안정적으로 하려면 시트에서 `파일 → Google Sheets로 저장`(네이티브 변환)을 한 번 해두면 `export?format=csv` 경로까지 열립니다.
 
 ### 동작 점검
 
 ```bash
 # 로컬에서 한 번 돌려 동기화 결과(추가/제거 요약)를 확인
-ADVERTISERS_SHEET_CSV_URL="<게시 CSV URL>" node sync-advertisers.js
-# config.sources.meta.advertisers 에 시트 내용이 반영됩니다.
+ADVERTISERS_SHEET_URL="<시트 주소>" node sync-advertisers.js
+# config.sources.meta.advertisers 에 시트 내용이 반영됩니다(advertisers 배열만 갱신).
 ```

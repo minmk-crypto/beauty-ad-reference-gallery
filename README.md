@@ -41,9 +41,10 @@ render.js           docs/index.html + assets 재생성
 
 Meta 추적 대상(광고주 목록)은 마케터가 직접 관리하는 **Google Sheet** 한 곳에서 정합니다. 시트를 고치면 다음 갱신 주기(월·수·금 03:00 KST)에 `sync-advertisers.js`가 시트를 읽어 `config.json`의 광고주 목록을 맞춥니다. 코드 수정이 필요 없습니다.
 
-- 인증/시크릿 없이 동작합니다 — 시트를 "웹에 게시(CSV)" 하거나 "링크 보기 공유" 상태로 두면 됩니다(추적 대상은 공개 경쟁사 페이지 ID라 민감정보가 아님).
-- 시트가 비었거나 접근 불가·CSV 깨짐이면 **직전 목록을 그대로 유지**합니다(빈 목록 사고 방지).
-- 시트 URL은 `config.json`의 `sources.meta.advertisers_sheet.csv_url` 또는 `ADVERTISERS_SHEET_CSV_URL` 시크릿으로 등록합니다(시크릿 우선).
+- 담당자는 **시트 주소(URL)만** 등록하면 됩니다 — 편집/공유/게시/gviz/ID 어떤 형태든 OK. `sync-advertisers.js`가 CSV 읽기 엔드포인트(`export?format=csv` → `gviz` 순)를 자동 도출합니다. "웹에 게시" 같은 변환 불필요.
+- 인증/시크릿 없이 동작합니다. 단, CI(GitHub Actions)는 로그인 없이 읽으므로 시트를 **"링크가 있는 모든 사용자: 뷰어"**로 공유해야 합니다(추적 대상은 공개 경쟁사 페이지 ID라 민감정보가 아님).
+- 시트가 비었거나 접근 불가·CSV 깨짐이면 **직전 목록을 그대로 유지**합니다(빈 목록 사고 방지). `config.json`은 `advertisers` 배열만 갱신해 diff를 최소화합니다.
+- 시트 URL은 `config.json`의 `sources.meta.advertisers_sheet.url` 또는 `ADVERTISERS_SHEET_URL` 시크릿으로 등록합니다(시크릿 우선).
 - 현재 추적 중인 광고주 전체는 [`advertisers-seed.csv`](advertisers-seed.csv)로 export되어 있어 시트 최초 생성 시 그대로 가져오면 됩니다.
 
 컬럼 설명·페이지 ID 찾는 법·최초 셋업은 **[docs/advertiser-sheet-guide.md](docs/advertiser-sheet-guide.md)** 참고.

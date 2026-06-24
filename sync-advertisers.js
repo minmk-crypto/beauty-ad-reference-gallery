@@ -115,18 +115,73 @@ function rowsToAdvertisers(rows) {
   return { advertisers, errors };
 }
 
-async function fetchCSV(url) {
-  // 게시/공유 시트는 종종 1회 302 리다이렉트 → fetch 가 자동 추종
+/* 담당자가 붙여넣는 어떤 형태의 시트 URL이든 → 시도할 CSV 엔드포인트 후보 목록으로 변환.
+ * 지원: 일반 편집/공유 URL(.../d/<ID>/edit?...), 게시 URL(.../pub?output=csv),
+ *       gviz URL(.../gviz/tq?tqx=out:csv), 스프레드시트 ID 단독.
+ * data: URL(테스트용)은 그대로 사용. */
+function toCsvCandidates(input) {
+  input = (input || '').trim();
+  if (input.startsWith('data:')) return [input];
+  // 이미 CSV 를 돌려주는 엔드포인트면 그대로 사용
+  if (/output=csv|tqx=out:csv|[?&]format=csv/i.test(input)) return [input];
+
+  // 스프레드시트 ID 추출 (.../d/<ID>/ 또는 .../d/e/<ID>/ 또는 ID 단독)
+  const m = input.match(/\/spreadsheets\/d\/(?:e\/)?([a-zA-Z0-9\-_]+)/) ||
+            input.match(/^([a-zA-Z0-9\-_]{20,})$/);
+  if (!m) return [input]; // 알 수 없는 형태 — 그대로 시도
+  const id = m[1];
+  const g = input.match(/[#?&]gid=(\d+)/); // 특정 탭 지정 시
+  const gid = g ? g[1] : '0';             // 미지정이면 첫 번째 탭
+  return [
+    `https://docs.google.com/spreadsheets/d/${id}/export?format=csv&gid=${gid}`,
+    `https://docs.google.com/spreadsheets/d/${id}/gviz/tq?tqx=out:csv&gid=${gid}`,
+  ];
+}
+
+async function tryFetch(url) {
+  // 게시/공유 시트는 종종 302 리다이렉트 → fetch 가 자동 추종
   const res = await fetch(url, {
     redirect: 'follow',
     headers: { 'user-agent': 'beauty-ad-gallery sync-advertisers', 'accept': 'text/csv,*/*' },
   });
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
   const text = await res.text();
+  if (!res.ok) return { ok: false, why: `HTTP ${res.status}`, status: res.status };
   if (/<html|<!doctype/i.test(text.slice(0, 200))) {
-    throw new Error('CSV 가 아니라 HTML 응답 — 시트가 "웹에 게시(CSV)" 또는 "링크 보기 공유" 상태인지 확인');
+    // 로그인/권한 페이지면 보통 accounts.google.com 으로 유도
+    return { ok: false, why: 'HTML(권한 필요)', status: res.status };
   }
-  return text;
+  return { ok: true, text };
+}
+
+async function fetchCSV(rawUrl) {
+  const candidates = toCsvCandidates(rawUrl);
+  let lastWhy = '';
+  for (const url of candidates) {
+    const r = await tryFetch(url);
+    if (r.ok) return r.text;
+    lastWhy = r.why;
+  }
+  throw new Error(`CSV 를 못 받음(${lastWhy}). 시트를 "링크가 있는 모든 사용자: 뷰어"로 공유하고, ` +
+    `업로드한 .xlsx 라면 "Google Sheets로 저장(네이티브 변환)" 했는지 확인하세요.`);
+}
+
+/* advertisers 배열만 원본 텍스트에서 교체(파일 나머지 포맷·주석 보존 → git diff 최소화, 멱등).
+ * advertiser 객체는 [] 를 포함하지 않으므로 배열 시작 '[' 이후 첫 ']' 가 배열 끝이다. */
+function replaceAdvertisersInText(text, advertisers) {
+  const key = text.search(/"advertisers"\s*:/);
+  if (key < 0) throw new Error('config 에 advertisers 키 없음');
+  const arrStart = text.indexOf('[', key);
+  const arrEnd = text.indexOf(']', arrStart);
+  if (arrStart < 0 || arrEnd < 0) throw new Error('advertisers 배열 경계 파싱 실패');
+  const lineStart = text.lastIndexOf('\n', key) + 1;
+  const indent = (text.slice(lineStart, key).match(/^\s*/) || [''])[0]; // 키 줄 들여쓰기(예: 6칸)
+  const itemIndent = indent + '  ';
+  const body = advertisers.map(a =>
+    `${itemIndent}{ "label": ${JSON.stringify(a.label)}, "page_id": ${JSON.stringify(a.page_id)}, ` +
+    `"type": ${JSON.stringify(a.type)}, "kbeauty": ${a.kbeauty === true}, "country": ${JSON.stringify(a.country || '')} }`
+  ).join(',\n');
+  const newArr = `[\n${body}\n${indent}]`;
+  return text.slice(0, arrStart) + newArr + text.slice(arrEnd + 1);
 }
 
 function diffSummary(prev, next) {
@@ -139,14 +194,18 @@ function diffSummary(prev, next) {
 }
 
 async function main() {
-  const cfg = JSON.parse(fs.readFileSync(CFG_PATH, 'utf8'));
+  const rawText = fs.readFileSync(CFG_PATH, 'utf8');
+  const cfg = JSON.parse(rawText);
   cfg.sources = cfg.sources || {};
   cfg.sources.meta = cfg.sources.meta || {};
   const meta = cfg.sources.meta;
-  const url = (process.env.ADVERTISERS_SHEET_CSV_URL || (meta.advertisers_sheet && meta.advertisers_sheet.csv_url) || '').trim();
+  const sheet = meta.advertisers_sheet || {};
+  // 어떤 형태의 시트 URL 이든(편집·공유·게시·gviz·ID) 허용. env 우선.
+  const url = (process.env.ADVERTISERS_SHEET_URL || process.env.ADVERTISERS_SHEET_CSV_URL ||
+               sheet.url || sheet.csv_url || '').trim();
 
   if (!url) {
-    log('⚠ 광고주 시트 URL 미설정 — config.sources.meta.advertisers_sheet.csv_url 또는 ADVERTISERS_SHEET_CSV_URL 환경변수. 동기화 생략, 기존 config 유지.');
+    log('⚠ 광고주 시트 URL 미설정 — config.sources.meta.advertisers_sheet.url 또는 ADVERTISERS_SHEET_URL 환경변수. 동기화 생략, 기존 config 유지.');
     out({ synced: false, reason: 'no_url', advertisers: (meta.advertisers || []).length });
     return; // exit 0 — 워크플로 계속 진행
   }
@@ -170,8 +229,9 @@ async function main() {
 
   const prev = meta.advertisers || [];
   const { added, removed } = diffSummary(prev, advertisers);
-  meta.advertisers = advertisers;
-  fs.writeFileSync(CFG_PATH, JSON.stringify(cfg, null, 2) + '\n');
+  // advertisers 배열만 in-place 교체(파일 나머지 포맷 보존). 변동 없으면 파일도 그대로.
+  const newText = replaceAdvertisersInText(rawText, advertisers);
+  if (newText !== rawText) fs.writeFileSync(CFG_PATH, newText);
 
   log(`✔ 동기화 완료: ${advertisers.length}개 광고주 (이전 ${prev.length}개)`);
   if (added.length) log(`  + 추가 ${added.length}: ${added.join(', ')}`);
@@ -179,7 +239,7 @@ async function main() {
   out({ synced: true, advertisers: advertisers.length, previous: prev.length, added, removed, skipped_rows: errors.length });
 }
 
-module.exports = { parseCSV, normHeader, truthy, rowsToAdvertisers, diffSummary };
+module.exports = { parseCSV, normHeader, truthy, rowsToAdvertisers, diffSummary, toCsvCandidates, replaceAdvertisersInText };
 
 if (require.main === module) {
   main().catch(e => { log('✖ 예외: ' + e.message + ' — 기존 config 유지'); process.exit(0); });

@@ -36,8 +36,8 @@ jobs:
       - name: 광고주 시트 동기화 (마케터 관리 시트 → config)
         env:
           # (선택) 시트 URL 을 config 에 커밋하지 않고 시크릿으로 주입하고 싶을 때만 설정.
-          # 미설정이면 config.sources.meta.advertisers_sheet.csv_url 을 사용한다.
-          ADVERTISERS_SHEET_CSV_URL: ${{ secrets.ADVERTISERS_SHEET_CSV_URL }}
+          # 미설정이면 config.sources.meta.advertisers_sheet.url 을 사용한다.
+          ADVERTISERS_SHEET_URL: ${{ secrets.ADVERTISERS_SHEET_URL }}
         run: node sync-advertisers.js || echo "::warning::광고주 시트 동기화 실패 — 기존 config 유지"
 
       - name: Meta 수집
